@@ -2,7 +2,11 @@
 [메인 페이지](https://webs9919.github.io/class2024/)     
 
 [자바스크립트](https://webs9919.github.io/class2024/javascript/index.html)   
-[Mysql](https://webs9919.github.io/class2024/mysql/index.html)
+
+[Mysql](https://webs9919.github.io/class2024/mysql/index.html)   
+
+
+* 스페이스 3번 클릭해서 줄바꿈
 
 
 # vscode 확장 프로그램
@@ -18,6 +22,8 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 다중선택: alt + shift + 클릭
 다중 키워드 선택: ctrl + D
 왼쪽 끝 정렬: shift + Tab
+주석: ctrl + /
+
 
 # 수업 규칙
 1. 지각, 결석, 조퇴 ---> 발표1
@@ -32,3 +38,4 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 디자인소스_ https://wsss.tistory.com/
 최신코드로바꿔줌_ https://www.sassmeister.com/
 _ https://www.mamp.info/en/downloads/
+https://prismjs.com/
