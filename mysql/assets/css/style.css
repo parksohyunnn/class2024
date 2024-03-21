@@ -250,7 +250,7 @@ li {
     padding: 20px;
     background-color: #edf3ff;
     border-left: 3px solid #161366;
-    font-family: var(--black);
+    font-family: var(--fontG);
 }
 
 .main__sample .sample .info p {
