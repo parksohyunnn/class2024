@@ -1,10 +1,10 @@
 # 오늘의 수업
-[메인 페이지](https://webs9919.github.io/class2024/)     
+[메인 페이지](https://parksohyunnn.github.io/class2024/)     
 
-[자바스크립트](https://webs9919.github.io/class2024/javascript/index.html)   
+[자바스크립트](https://parksohyunnn.github.io/class2024/javascript/index.html)   
 
-[Mysql](https://webs9919.github.io/class2024/mysql/index.html)   
-[quiz](https://webs9919.github.io/class2024/quiz/index.html)     
+[Mysql](https://parksohyunnn.github.io/class2024/mysql/index.html)   
+[quiz](https://parksohyunnn.github.io/class2024/quiz/index.html)     
 
 
 * 스페이스 3번 클릭해서 줄바꿈
