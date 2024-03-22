@@ -39,3 +39,6 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 최신코드로바꿔줌_ https://www.sassmeister.com/
 _ https://www.mamp.info/en/downloads/
 https://prismjs.com/
+무료 이미지 사이트_ Playground - free-to-use online AI image creator
+
+선생님 깃허브_ https://github.com/webs9919/class2024/tree/main/mysql
