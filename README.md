@@ -23,6 +23,8 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 다중 키워드 선택: ctrl + D
 왼쪽 끝 정렬: shift + Tab
 주석: ctrl + /
+부분 선택 : shift + 방향키
+색션 선택 : alt + shift + 방향키
 
 
 # 수업 규칙
@@ -40,5 +42,7 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 _ https://www.mamp.info/en/downloads/
 https://prismjs.com/
 무료 이미지 사이트_ Playground - free-to-use online AI image creator
-
+3D 디자인 소스 웹_ https://threejs.org/
+3D 오브젝트 제작 사이트_ https://spline.design/
 선생님 깃허브_ https://github.com/webs9919/class2024/tree/main/mysql
+폰트를 변환시켜주는 사이트_https://gero3.github.io/facetype.js/
