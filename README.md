@@ -7,8 +7,8 @@
 [quiz](https://parksohyunnn.github.io/class2024/quiz/index.html) 
 
 ##퀴즈 게임
-[퀴즈게임] (https://parksohyunnn.github.io/class2024/quiz/index.html)
-[퀴즈01] (https://parksohyunnn.github.io/class2024/quiz/quiz01index.html)
+[퀴즈게임] (https://parksohyunnn.github.io/class2024/quiz/index.html)   
+[퀴즈01] (https://parksohyunnn.github.io/class2024/quiz/quiz01index.html)   
 - 변수(const)
 - 선택자 (querySelector)
 - 메서드 (innerText(), classList, addEventListener, if문)
