@@ -4,19 +4,26 @@
 [자바스크립트](https://parksohyunnn.github.io/class2024/javascript/index.html)   
 
 [Mysql](https://parksohyunnn.github.io/class2024/mysql/index.html)   
-[quiz](https://parksohyunnn.github.io/class2024/quiz/index.html)     
+[quiz](https://parksohyunnn.github.io/class2024/quiz/index.html) 
+
+##퀴즈 게임
+[퀴즈게임] (https://parksohyunnn.github.io/class2024/quiz/index.html)
+[퀴즈01] (https://parksohyunnn.github.io/class2024/quiz/quiz01index.html)
+- 변수(const)
+- 선택자(querySelector)
+- 메서드
 
 
 * 스페이스 3번 클릭해서 줄바꿈
 
 
-# vscode 확장 프로그램
+#### vscode 확장 프로그램
 Live Server : 웹페이지 미리보기   
 Material Icon : 아이콘 설정   
 ESlint : 문법 정렬(셋팅 : Format On Save 체크)   
 ES7 : 자바스크립트 및 리액트 문법 정리   
 
-# vscode 단축키
+#### vscode 단축키
 설정 : ctrl + ,   
 사이드 바 : ctrl + b   
 줄 복사 : alt + shift + 화살표   
@@ -26,6 +33,7 @@ ES7 : 자바스크립트 및 리액트 문법 정리
 주석: ctrl + /
 부분 선택 : shift + 방향키
 색션 선택 : alt + shift + 방향키
+부분 선택 : alt + 마우스로 선택
 
 
 # 수업 규칙
