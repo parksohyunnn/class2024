@@ -54,3 +54,7 @@ https://prismjs.com/
 3D 오브젝트 제작 사이트_ https://spline.design/
 선생님 깃허브_ https://github.com/webs9919/class2024/tree/main/mysql
 폰트를 변환시켜주는 사이트_https://gero3.github.io/facetype.js/
+소현 깃허브_ https://github.com/parksohyunnn
+웹폰트 사이트_ https://wess.tistory.com/
+웹디자인기능사유튜브_ https://www.youtube.com/watch?v=pLxtF5yAw84&list=PL4UVBBIc6giK95pWwwoTQP82aI9iGNo-g&index=7
+
