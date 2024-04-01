@@ -58,7 +58,7 @@
     font-display: swap;
 }
 
-/* reset*/
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -76,6 +76,7 @@ a {
     color: #000;
 }
 
+/* body */
 body {
     background-size: cover;
     background-position: center center;
@@ -84,7 +85,6 @@ body {
     background-image: url(../img/bg01.jpg);
     width: 100%;
     min-height: 100vh;
-
 }
 
 body::after {
@@ -98,7 +98,7 @@ body::after {
     z-index: -1;
 }
 
-/*common*/
+/* common */
 .none {
     display: none;
 }
@@ -161,10 +161,10 @@ body::after {
     text-underline-position: under;
 }
 
-/*quiz__wrap*/
+/* quiz__wrap */
 .quiz__wrap {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -175,43 +175,102 @@ body::after {
     padding: 40px 30px;
     border-radius: 10px;
     margin: 10px;
-
 }
 
-.quiz .quiz__header {
+.quiz__header {
     color: #696969;
     margin-bottom: 20px;
 }
 
-.quiz .quiz__main .question {
-    margin-bottom: 10px;
+.quiz__main .question {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.4;
 }
 
-.quiz .quiz__main .question em {
+.quiz__main .question em {
     font-size: 24px;
     font-style: normal;
     line-height: 1.4;
 }
 
-.quiz .quiz__main .question span {
+.quiz__main .question span {
     font-size: 24px;
     line-height: 1.4;
 }
 
-.quiz .quiz__main .input input {
+.quiz__main .choices {
+    margin-bottom: 20px;
+}
+
+.quiz__main .choices label {
+    display: block;
+    width: 100%;
+}
+
+.quiz__main .choices label input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.quiz__main .choices label span {
+    border: 1px solid #eee;
+    padding: 17px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.quiz__main .choices label span:hover {
+    border-color: #412E91;
+    color: #412E91;
+    box-shadow: 1px 1px 5px #422e9160;
+}
+
+.quiz__main .choices label span::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px #412E91;
+    margin-right: 13px;
+    transition: all 0.3s;
+}
+
+.quiz__main .choices label input:checked+span::before {
+    box-shadow: inset 0 0 0 9px #412E91;
+}
+
+.quiz__main .choices label input:checked+span {
+    border-color: #412E91;
+    color: #412E91;
+    box-shadow: 1px 1px 3px #422e9160;
+    background-color: #e9e4ff60;
+}
+
+
+.quiz__main .input input {
     width: 100%;
     padding: 20px;
     border: 1px solid #b8a8ff;
     border-radius: 3px;
     font-size: 16px;
     color: #666;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 
-.quiz .quiz__main .answer {
+.quiz__main .answer {
     border: 1px solid #b8a8ff;
     padding: 20px;
-    background-color: #b8a8ff;
+    background-color: #e7e2ff;
     border-radius: 3px;
     font-size: 16px;
     color: #666;
@@ -219,14 +278,13 @@ body::after {
     margin-bottom: 10px;
 }
 
-.quiz .quiz__main .desc::before {
-    content: '설명 😍:';
+.quiz__main .answer::before {
+    content: '🥰 정답 : ';
 }
 
-.quiz .quiz__main .desc {
-    border: 1px solid #b8a8ff;
+.quiz__main .desc {
+    border: 1px solid #e0d9ff;
     padding: 20px;
-    background-color: #ffffff;
     border-radius: 3px;
     font-size: 16px;
     color: #666;
@@ -234,12 +292,12 @@ body::after {
     margin-bottom: 10px;
 }
 
-.quiz .quiz__main .answer::before {
-    content: '정답 😍:';
+.quiz__main .desc::before {
+    content: '🥳 설명 : ';
 }
 
-.quiz .quiz__footer .confirm {
-    background-color: #1f144e;
+.quiz__footer .confirm {
+    background-color: #412E91;
     color: #fff;
     width: 100%;
     padding: 20px;
@@ -250,9 +308,9 @@ body::after {
     transition: background-color 0.3s;
 }
 
-.quiz .quiz__footer .confirm:hover {
+.quiz__footer .confirm:hover {
     background-color: transparent;
-    border: 1px dashed #1f144e;
-    color: #1f144e;
+    border: 1px dashed #412E91;
+    color: #412E91;
     cursor: pointer;
 }
