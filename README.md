@@ -13,6 +13,26 @@
 - 선택자 (querySelector)
 - 메서드 (innerText(), classList, addEventListener, if문)
 
+[퀴즈02] (https://parksohyunnn.github.io/class2024/quiz02/index.html)  
+
+
+[퀴즈03] (https://parksohyunnn.github.io/class2024/quiz03/index.html) 
+- 변수, 배열, 객체
+- 선택자querySelector(), 선택자querySelectorAll()
+- 반복문for() break문
+- 메서드(innerHTML, classList.add, addEventListenter,if문)
+
+
+
+[퀴즈04] (https://parksohyunnn.github.io/class2024/quiz04/index.html)  
+- 변수, 배열, 객체
+- 선택자querySelector(), 선택자querySelectorAll()
+- 반복문for() break문
+- 메서드(innerHTML, classList.add, addEventListenter,if문)
+
+
+
+
 
 #### vscode 확장 프로그램
 Live Server : 웹페이지 미리보기   
