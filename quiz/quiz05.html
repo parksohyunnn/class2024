@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 05</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>
+            <a href="index.html">Quiz</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="quiz01.html">1</a></li>
+                <li><a href="quiz02.html">2</a></li>
+                <li><a href="quiz03.html">3</a></li>
+                <li><a href="quiz04.html">4</a></li>
+                <li class="active"><a href="quiz05.html">5</a></li>
+                <li><a href="quiz06.html">6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="quiz__wrap"></div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:webstoyboy@naver.com">webstoyboy@naver.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script>
+        //선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+
+
+        // 문제정보
+        const quizInfo = [
+            {
+                date: "2017년 상시",
+                type: "정보처리 기능사",
+                question: "ROM(Read Only Memory)에 대한 옳은 설명은?",
+                choices: [
+                    "데이터를 읽고 기록하는 것 모두 가능하다.",
+                    "데이터를 기록하는 것만 가능하다.",
+                    "데이터를 읽고 기록하는 것 모두 불가능하다.",
+                ],
+                answer: "4",
+                desc: "ROM이란 읽기 전용 메모리란 뜻으로 읽는것만 가능합니다.",
+            }, {
+                date: "2017년 상시",
+                type: "정보처리 기능사",
+                question: "ROM(Read Only Memory)에 대한 옳은 설명은?",
+                choices: [
+                    "데이터를 읽고 기록하는 것 모두 가능하다.",
+                    "데이터를 기록하는 것만 가능하다.",
+                    "데이터를 읽고 기록하는 것 모두 불가능하다.",
+                ],
+                answer: "1",
+                desc: "ROM(Read Only Memory) 이란 읽기 전용 메모리란 뜻으로 읽는것만 가능합니다.",
+            }, {
+                date: "2017년 상시",
+                type: "정보처리 기능사",
+                question: "명령어 내의 오퍼랜드가 지정한 곳에 실제 데이터 값이 기억된 장소를 지정하는 방식으로, 피 연산자를 구하기 위하여 두 번의 기억장소 접근을 해야 하는 방식은?",
+                choices: [
+                    "직접주소",
+                    "기본주소",
+                    "상대주소"
+                ],
+                answer: "1",
+                desc: "간접주소 : 메모리 참조 2회 입니다..문제에서 두번의 기억장소 접근을 해야 한다고 했으므로 간접주소 방식 입니다.",
+            }, {
+                date: "2017년 상시",
+                type: "정보처리 기능사",
+                question: "ROM(Read Only Memory)에 대한 옳은 설명은?",
+                choices: [
+                    "데이터를 읽고 기록하는 것 모두 가능하다.",
+                    "데이터를 기록하는 것만 가능하다.",
+                    "데이터를 읽고 기록하는 것 모두 불가능하다.",
+                ],
+                answer: "1",
+                desc: "ROM(Read Only Memory) 이란 읽기 전용 메모리란 뜻으로 읽는것만 가능합니다.",
+            }, {
+                date: "2017년 상시",
+                type: "정보처리 기능사",
+                question: "ROM(Read Only Memory)에 대한 옳은 설명은?",
+                choices: [
+                    "데이터를 읽고 기록하는 것 모두 가능하다.",
+                    "데이터를 기록하는 것만 가능하다.",
+                    "데이터를 읽고 기록하는 것 모두 불가능하다.",
+                ],
+                answer: "1",
+                desc: "ROM(Read Only Memory) 이란 읽기 전용 메모리란 뜻으로 읽는것만 가능합니다.",
+            }
+
+        ]
+
+        //변수
+        let currentIndex = 0;  //현재 문제에 대한 값
+        console.log(currentIndex);
+
+
+        //문제 출력
+        const updateQuiz = (index) => {
+            let quizWrapTag = `
+            <div class="quiz">
+                <div class="quiz__header">${quizInfo[index].date} ${quizInfo[index].type}</div>
+                <div class="quiz__main">
+                    <div class="question">${quizInfo[index].question}</div>
+                    <div class="choices">
+                        <label for="choice1">
+                            <input type="radio" id="choice1" name="choice" value="1">
+                            <span>${quizInfo[index].choices[0]}</span>
+                        </label>
+                        <label for="choice2">
+                            <input type="radio" id="choice2" name="choice" value="2">
+                            <span>${quizInfo[index].choices[1]}</span>
+                        </label>
+                        <label for="choice3">
+                            <input type="radio" id="choice3" name="choice" value="3">
+                            <span>${quizInfo[index].choices[2]}</span>
+                        </label>
+                        <label for="choice4">
+                            <input type="radio" id="choice4" name="choice" value="4">
+                            <span>${quizInfo[index].choices[3]}</span>
+                        </label>-
+                    </div>
+                    <div class="answer none">${quizInfo[index].answer}</div>
+                    <div class="desc none">${quizInfo[index].desc}</div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="confirm">정답 확인하기</button>
+                    <button class="next none">다음 문제</button>
+                </div>
+            </div>
+            `
+            quizWrap.innerHTML = quizWrapTag;
+
+
+            //선택자
+            const quizConfirm = quizWrap.querySelector(".confirm");
+            const quizNext = quizWrap.querySelector(".next");
+
+            //정답 버튼을 클릭 alter(currentIndex);
+            quizConfirm.addEventListener("click", () => {
+                //사용자가 클릭한 정답 확인
+                const quizChecked = quizWrap.querySelector("input[name='choice']:checked");  //사용자가 클릭한 정답을 확인
+
+                if (quizChecked) {
+                    const userAnswer = quizChecked.value;            //사용자가 클릭한 value값
+                    const quizAnswer = quizInfo[currentIndex].answer;   //정답자의 정답
+                    const quizElement = quizWrap.querySelector(".quiz");
+                    const answerElement = quizWrap.querySelector(".answer");
+                    const descElement = quizWrap.querySelector(".desc");
+
+                    //사용자 정답과 정답자 정답을 비교
+                    if (userAnswer === quizAnswer) {
+                        quizElement.classList.add("good");
+                    } else {
+                        quizElement.classList.add("bad");
+                        answerElement.classList.add("none");
+                    }
+                    descElement.classList.remove("none");   //설명 추가
+                    quizNext.classList.remove("none");       //정답 버튼 삭제
+                    quizConfirm.classList.add("none");         //다음 버튼 추가
+                } else {
+                    alert("보기를 클릭해 주세요")
+                }
+            })
+
+
+            //다음 문제 버튼을 클릭하면 alert()
+            quizNext.addEventListener("click", () => {
+                if (currentIndex < quizInfo.length - 1) {
+                    currentIndex++;                //문제 번호 증가
+                    updateQuiz(currentIndex);      //퀴즈 반영
+                } else {
+                    alert("퀴즈가 종료되었습니다.")
+                }
+            })
+        }
+
+        //페이지가 로드된 후 실행
+        document.addEventListener("DOMContentLoaded", () => {
+            updateQuiz(currentIndex);
+        });
+
+        // 정답 확인
+
+    </script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 03</title>
+    <title>퀴즈 04</title>
     <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 
@@ -166,39 +166,20 @@
             const descElement = quizWrap.querySelectorAll(".desc")[index];
             const confirmElement = quizWrap.querySelectorAll(".confirm")[index];
 
-        }
-
-        // 페이지가 로드된 후 실행
-        document.addEventListener("DOMContentLoaded", () => {
-            // 문제 출력
-            updateQuiz();
-
-            // 정답 확인
-            quizWrap.querySelectorAll(".confirm").forEach((button, index) => {
-                button.addEventListener("click", () => {
-                    answerQuiz(index);
-                })
-            })
-        })
-
-        if (quizChecked.length > 0) {     // 사용자가 체크한것
-            const userAnswer = quizChecked[0].value;
-            console.log(userAnswer);
-            if (userAnswer === quizInfo[index].answer) {
-                quizElement.classList.add("good");   //o표시
-                confirmElement.classList.add("none");
-                descElement.classList.remove("none");
+            if (quizChecked.length > 0) {     // 사용자가 체크한것
+                const userAnswer = quizChecked[0].value;
+                if (userAnswer === quizInfo[index].answer) {
+                    quizElement.classList.add("good");          // O 표시
+                } else {
+                    quizElement.classList.add("bad");           // X 표시
+                    answerElement.classList.remove("none");     // 정답 보기
+                }
+                descElement.classList.remove("none");       // 해설 보기
+                confirmElement.style.display = "none";      // 정답 확인 버튼 숨기기
             } else {
-                quizElement.classList.add("bad");   //x표시
-                answerElement.classList.remove("none");    //정답보기
+                alert("보기를 선택해주세요!! 😎");
             }
-
-        } else {
-            alert("보기를 선택해주세요!! 😎");
         }
-
-
-
 
         // 페이지가 로드된 후 실행
         document.addEventListener("DOMContentLoaded", () => {
@@ -212,8 +193,6 @@
                 })
             })
         })
-
-
     </script>
 </body>
 
