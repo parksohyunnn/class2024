@@ -10,61 +10,30 @@
 <body>
     <script>
         {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
+            const obj = {
+                a: 100,
+                b: { x: 200, y: 300 },
+                c: "javascript"
+            }
 
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    var responseData = xhr.responseText;
-                    var jsonData = JSON.parse(responseData);
-
-                    console.log(jsonData);
-                } else if (xhr.readyState === 4) {
-                    console.error("데이터 불러오기 오류: " + xhr.status);
-                }
-            };
-
-            xhr.send();
+            console.log()         //100
+            console.log()         //200
+            console.log()         //300
+            console.log()         //400
         }
         // 01. 선언적 함수
-        {
-            function func() {
-                console.log("01");
-            }
-            func();
-        }
 
         // 02. 익명 함수
-        {
-            const func = function () {
-                console.log("2");
-            }
-            func();
-        }
+
         // 03. 매개변수 함수
         // 선언
-        {
-            function func(str) {
-                console.log(str);
-            }
-            func("03")
-        }
 
 
         // 익명
-        {
-            const func = function (str) {
-                console.log(str);
-            }
-            func("03")
-        }
+
 
         // 04. 리턴값 함수
-        {
-            function func() {
-                console.log("first")
-            }
-        }
+
 
 
         // 05. 매개변수 + 리턴값 함수
