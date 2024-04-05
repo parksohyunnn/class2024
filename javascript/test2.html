@@ -10,20 +10,10 @@
 <body>
     <script>
         {
-            {
-                // 01 JSON 데이터 --&gt; 객체 변환
-                const jsonString = '{ "name": "Hwang", "age": 30}';
-                const jsonObject = JSON.parse(jsonString);
+            const arr = [100, 200, 300, 400, 500, 600, 700, 800];
 
-                console.log(jsonObject.name);   // Hwang
-                console.log(jsonObject.age);    // 30
-            }
-            {
-                // 02 객체 파일 --&gt; JSON 데이터
-                const person = { name: "Hwang", age: 30 }
-                const jsonString = JSON.stringify(person);
-
-                console.log(jsonString);    // {"name":"Hwang","age":30}
+            for (let element in arr) {
+                console.log(arr[element]);
             }
         }
         // 01. 선언적 함수
