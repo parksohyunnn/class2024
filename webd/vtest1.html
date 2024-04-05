@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+        }
+
+        #header {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(255, 248, 218);
+        }
+
+        #header .container_header {
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #header .container_header .nav {
+            width: 1200px;
+            height: 100px;
+            background-color: rgb(255, 232, 158);
+        }
+
+        #header .container_header .menu {
+            width: 1200px;
+            height: 100px;
+            background-color: rgb(253, 205, 100);
+        }
+
+        #main {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(255, 248, 218);
+        }
+
+        #main .container_contents {
+            width: 1200px;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        #main .container_contents .contents1 {
+            width: 30%;
+            height: 600px;
+            background-color: rgb(255, 220, 105);
+
+        }
+
+        #main .container_contents .contents2 {
+            width: 70%;
+            height: 600px;
+            background-color: rgb(255, 189, 67);
+        }
+
+        #main .container_contents .contents2 .contents2-1 {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(231, 171, 60);
+        }
+
+        #main .container_contents .contents2 .contents2-2 {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(211, 145, 23);
+        }
+
+
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 248, 218);
+        }
+
+        #footer .container_footer {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: rgb(255, 187, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container_header">
+                <div class="nav"></div>
+                <div class="menu"></div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="container_contents">
+                <div class="contents1"></div>
+                <div class="contents2">
+                    <div class="contents2-1"></div>
+                    <div class="contents2-2"></div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container_footer"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
