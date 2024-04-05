@@ -9,39 +9,22 @@
 
 <body>
     <script>
-        {
-            const num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
 
-            num.filter(function (element) {
-                console.log(element);
-            });
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var responseData = xhr.responseText;
+            var jsonData = JSON.parse(responseData);
 
-            num.filter(function (element, index) {
-                console.log(index);
-            });
-
-            num.filter(function (element, index, array) {
-                console.log(array);
-            });
-
-            const arr = num.filter(function (element) {
-                return element > 5
-            });
-            console.log(arr);
-
-            const arr1 = num.filter((element) => {
-                return element > 5
-            });
-            console.log(arr1);
-
-            const arr2 = num.filter(element => {
-                return element > 5
-            });
-            console.log(arr2);
-
-            const arr3 = num.filter(e => e > 5);
-            console.log(arr3);
-        }
+            console.log(jsonData);
+        } else if (xhr.readyState === 4) {
+            console.error("데이터 불러오기 오류: " + xhr.status);
+        };
+    };
+}
+        
         // 01. 선언적 함수
 
         // 02. 익명 함수
