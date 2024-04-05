@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자바스크립트: 데이터 저장하기</title>
+    <title>자바스크립트 :: 데이터 저장하기</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/default.min.css">
@@ -45,7 +45,6 @@
                 <li><a href="#">02. 변수 : 데이터 저장 + 데이터 변경</a></li>
                 <li><a href="#">03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
                 <li><a href="#">04. 상수 : 데이터 저장 + 데이터 변경(X)</a></li>
-
                 <li><a href="#">05. 배열 : 데이터 저장(여러개) : 표현방법1 : 배열 선언</a></li>
                 <li><a href="#">06. 배열 : 데이터 저장(여러개) : 표현방법2 : 배열 선언과 동시에 초기화</a></li>
                 <li><a href="#">07. 배열 : 데이터 저장(여러개) : 표현방법3 : 리터럴 방식으로 배열 선언</a></li>
@@ -54,7 +53,6 @@
                 <li><a href="#">10. 배열 : 데이터 저장(여러개) : 표현방법6 : 다차원 배열</a></li>
                 <li><a href="#">11. 배열 : 데이터 저장(여러개) : 표현방법7 : 배열 구조 분해 할당</a></li>
                 <li><a href="#">12. 배열 : 데이터 저장(여러개) : 표현방법8 : 배열 펼침연산자</a></li>
-
                 <li><a href="#">13. 객체 : 데이터 저장(키와값) : 표현방법1 : 객체 선언 후 배열방식으로 데이터 입력</a></li>
                 <li><a href="#">14. 객체 : 데이터 저장(키와값) : 표현방법2 : 객체 선언 후 객체방식으로 데이터 입력</a></li>
                 <li><a href="#">15. 객체 : 데이터 저장(키와값) : 표현방법3 : 리터럴 방식으로 객체 선언</a></li>
@@ -66,9 +64,9 @@
                 <li><a href="#">21. 객체 : 데이터 저장(키와값) : 표현방법9 : 객체 구조 분해 할당</a></li>
                 <li><a href="#">22. 객체 : 데이터 저장(키와값) : 표현방법10 : 객체 펼침연산자</a></li>
                 <li><a href="#">23. 파일 : 데이터 교환(JSON)</a></li>
-
-                <li><a href="#">25. ++ 연산자(논리, 산술, 비교, 조건......)</a></li>
-                <li><a href="#">26. ++ 자료형</a></li>
+                <li><a href="#">++연산자</a></li>
+                <li><a href="#">++자료형</a></li>
+                <li><a href="#">++지역변수/전역변수</a></li>
             </ul>
         </div>
         <!-- //main__menu -->
@@ -128,7 +126,8 @@
                     JavaScript에서 변수는 데이터를 저장하고 변경하는 데 사용됩니다.<br>
                     변수를 사용하면 프로그램에서 값을 저장하고 나중에 필요할 때 해당 값을 사용할 수 있습니다.<br>
                     데이터 변경은 변수에 새로운 값을 할당하여 이루어집니다.<br>
-                    이를 통해 변수의 값은 언제든지 변경될 수 있습니다.
+                    이를 통해 변수의 값은 언제든지 변경될 수 있습니다.<br>
+                    변수 x와 y는 새로운 값으로 변경되었고, 변수 z는 "jquery"로 변경
                 </p>
                 <pre><code>{
     let x = 100;            //변수 x에 숫자 100을 저장
@@ -150,9 +149,6 @@
                             300<br>
                             400<br>
                             jquery
-                            <P>
-                                변수 x와 y는 새로운 값으로 변경되었고, 변수 z는 "jquery"로 변경
-                            </P>
                         </div>
                     </details>
                 </div>
@@ -160,35 +156,29 @@
             <div id="sample3" class="sample">
                 <h3>03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</h3>
                 <p>
-                </p>
-                JavaScript 변수는 데이터 저장소로 작용하며, 값을 저장하고 변경할 수 있습니다.<br>
-                데이터 변경은 변수에 새로운 값을 할당하여 이루어지며, 데이터 추가는 객체나 배열과 같은 자료구조에 새로운 속성이나 요소를 추가하여 이루어집니다.
+                    JavaScript 변수는 데이터 저장소로 작용하며, 값을 저장하고 변경할 수 있습니다.
+                    데이터 변경은 변수에 새로운 값을 할당하여 이루어지며, 데이터 추가는 객체나 배열과 같은 자료구조에 새로운 속성이나 요소를 추가하여 이루어집니다.
                 </p>
                 <pre><code>{
-                    {
-let x = 100;        //변수 x에 숫자 100을 저장
-let y = 200;        //변수 y에 숫자 200을 저장
+let x = 100;                //변수 x에 숫자 100을 저장
+let y = 200;                //변수 y에 숫자 200을 저장
 let z = "javascript";       //변수 z에 문자 "javacript" 을 저장
 
-x = x + 100;         //변수 x의 값에 100을 더하고 그 결과를 다시 변수 x에 저장
-y = y + 100;         //변수 y의 값에 100을 더하고 그 결과를 다시 변수 y에 저장
-z = z + "jqwery"    //변수 z의 값에 "jquery" 문자열을 더하고 그 결과를 다시 변수 z에 저장
-
+x += 300;                   //변수 x의 값에 100을 더하고 그 결과를 다시 변수 x에 저장
+y += 400;                   //변수 y의 값에 100을 더하고 그 결과를 다시 변수 y에 저장
+z += "jquery";              //변수 z의 값에 "jquery" 문자열을 더하고 그 결과를 다시 변수 z에 저장
+ 
 console.log(x);
 console.log(y);
 console.log(z);
-}
 }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
-                            200<br>
-                            300<br>
+                            400<br>
+                            500<br>
                             javacriptsjquery
-                            <P>
-                                변수 x와 y는 각각 100씩 증가하였고, 변수 z는 "javascript"와 "jquery"를 합친 문자열로 변경
-                            </P>
                         </div>
                     </details>
                 </div>
@@ -198,17 +188,21 @@ console.log(z);
                 <p>
                     상수는 데이터를 저장하는 데 사용되지만, 한 번 값을 할당하면 변경할 수 없는 변수입니다.<br>
                     상수는 데이터 저장에 사용되며, 그 값을 변경할 수 없습니다.<br>
+                    상수로 선언된 변수는 초기에 한 번만 값을 할당할 수 있으며, 그 후에는 변경할 수 없다.<br>
                     JavaScript에서는 const 키워드를 사용하여 상수를 선언합니다. 한 번 할당된 후에는 다시 할당할 수 없으므로 상수의 값은 변하지 않습니다.
-
                 </p>
                 <pre><code>{
 const x = 100;
 const y = 200;
 const z = "javascript";
 
+// x = 300;
+// y = 400;
+// z = "jquery";
+
 console.log(x);
 console.log(y);
-console.log(z);        
+console.log(z);     
 }</code></pre>
                 <div class="result">
                     <details>
@@ -217,9 +211,6 @@ console.log(z);
                             100<br>
                             200<br>
                             javascript
-                            <P>
-                                상수로 선언된 변수는 초기에 한 번만 값을 할당할 수 있으며, 그 후에는 변경할 수 없다.
-                            </P>
                         </div>
                     </details>
                 </div>
@@ -283,7 +274,8 @@ console.log(arr[2]);
             <div id="sample7" class="sample">
                 <h3>07. 배열 : 데이터 저장(여러개) : 표현방법3 : 리터럴 방식으로 배열 선언</h3>
                 <p>
-                    배열을 리터럴 방식으로 선언하고 값을 할당하여 사용합니다.
+                    배열을 리터럴 방식으로 선언하고 값을 할당하여 사용합니다. 배열 리터널은 빈 대괄호([])를 사용하여 빈 배열을 생성하는 것입니다. 이 방식을 통해 배열의 요소들을 바로 지정할 수
+                    있습니다.
                 </p>
                 <pre><code>{
 const arr = [];
@@ -310,7 +302,8 @@ console.log(arr[2]);
             <div id="sample8" class="sample">
                 <h3>08. 배열 : 데이터 저장(여러개) : 표현방법5 : 리터럴 방식으로 배열 선언과 동시에 초깃값 설정</h3>
                 <p>
-                    배열을 리터럴 방식으로 선언하고 동시에 초기값을 설정합니다.
+                    배열을 리터럴 방식으로 선언하고 동시에 초기값을 설정합니다.데이터를 미리 배열에 저장하고자 할 때 사용됩니다. 배열 리터널은 대괄호([])를 사용하여 표현되며, 대괄호 안에
+                    초기값을 쉼표(,)로 구분하여 나열함으로써 배열을 초기화할 수 있습니다.
                 </p>
                 <pre><code>{
 const arr = [100, 200, "javascript"];
@@ -369,19 +362,23 @@ console.log(arr[3]);
                     세 번째 요소는 문자열로 된 또 다른 배열 ["javascript", "jquery"]입니다.
                 </p>
                 <pre><code>{
-const arr = [100, [200, 300], ["javascript", "jquery"]];
+const arr = [100, [200, 300], [400, 500, [600]], "javascript", "jquery"];
 
 console.log(arr[0]);
-console.log(arr[1]);
-console.log(arr[2]);
+console.log(arr[1][0]);
+console.log(arr[1][1]);
+console.log(arr[2][1]);
+console.log(arr[2][2][0]);
 }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
                             100<br>
-                            [200, 300]<br>
-                            ['javascript', 'jquery']
+                            200<br>
+                            300<br>
+                            500<br>
+                            600
                         </div>
                     </details>
                 </div>
@@ -390,31 +387,35 @@ console.log(arr[2]);
                 <h3>11. 배열 : 데이터 저장(여러개) : 표현방법7 : 배열 구조 분해 할당</h3>
                 <p>
                     배열 구조 분해 할당은 배열의 각 요소를 변수에 개별적으로 할당하는 기술입니다.<br>
-
                     위 코드는 JavaScript에서 배열 구조 분해 할당 (Array Destructuring Assignment)을 사용하는 예제입니다. 이 기능은 배열에서 값을 추출하여 여러
-                    변수에 할당하는 편리한 방법을 제공합니다.<br>
-
-                    const arr = [100, 200, "javascript"];: 배열 arr을 선언하고 초기화합니다. 이 배열에는 세 개의 요소가 있습니다: 숫자 100, 숫자 200,
-                    그리고 문자열 "javascript".<br>
-
-                    const [a, b, c] = arr;: 배열 구조 분해 할당을 사용하여 arr의 각 요소를 a, b, c 변수에 순서대로 할당합니다. 즉, 첫 번째 요소는 a에, 두 번째
-                    요소는 b에, 세 번째 요소는 c에 할당됩니다.<br>
-
+                    변수에 할당하는 편리한 방법을 제공합니다. const arr = [100, 200, "javascript"];: 배열 arr을 선언하고 초기화합니다. 이 배열에는 세 개의 요소가
+                    있습니다: 숫자 100, 숫자 200,
+                    그리고 문자열 "javascript". const [a, b, c] = arr;: 배열 구조 분해 할당을 사용하여 arr의 각 요소를 a, b, c 변수에 순서대로 할당합니다.
+                    즉, 첫 번째 요소는 a에, 두 번째
+                    요소는 b에, 세 번째 요소는 c에 할당됩니다.
                     console.log(a); // 100: a 변수에 할당된 값인 100을 출력합니다.<br>
-
                     console.log(b); // 200: b 변수에 할당된 값인 200을 출력합니다.<br>
-
                     console.log(c); // javascript: c 변수에 할당된 값인 "javascript"를 출력합니다.<br>
-
                     결과적으로, 위 코드는 배열에서 값을 추출하여 세 개의 변수에 할당하고, 각 변수를 출력하여 해당 값들을 확인합니다.
                 </p>
                 <pre><code>{
-const arr = [100, 200, "javascript"];
-const [a, b, c] = arr;
+    const arr = [100, 200, "javascript"];
 
-console.log(a); // 100
-console.log(b); // 200
-console.log(c); // javascript
+    const [a, b, c] = arr;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+{
+    const arr = [100, 200, [300, 400]];
+
+    const [a, b, [x, y]] = arr;
+
+    console.log(a);
+    console.log(b);
+    console.log(x);
+    console.log(y);
 }</code></pre>
                 <div class="result">
                     <details>
@@ -423,6 +424,11 @@ console.log(c); // javascript
                             100<br>
                             200<br>
                             javascript<br>
+                            <br>
+                            100<br>
+                            200<br>
+                            300<br>
+                            400<br>
                         </div>
                     </details>
                 </div>
@@ -494,17 +500,23 @@ console.log(c); // javascript
                     유사하지만, 여러 개의 속성을 한 번에 지정할 수 있어서 코드를 더 간결하게 작성할 수 있습니다.
                 </p>
                 <pre><code>{
-const obj = new Object();
+const obj = new Object();    //객체 선언
 
-obj[0] = 100;
-obj[1] = 200;
-obj[2] = "javascript";
+obj[0] = 100;                //obj 변수에 숫자 100을 저장
+obj[1] = 200;                //obj 변수에 숫자 200을 저장
+obj[2] = "javascript";       //obj 변수에 숫자 "javascript" 저장
+
+console.log(obj[0]);
+console.log(obj[1]);
+console.log(obj[2]);          
 }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
-
+                            100<br>
+                            200<br>
+                            javascript
                         </div>
                     </details>
                     <details>
@@ -530,35 +542,35 @@ obj[2] = "javascript";
             <div id="sample14" class="sample">
                 <h3>14. 객체 : 데이터 저장(키와값) : 표현방법2 : 객체 선언 후 객체방식으로 데이터 입력</h3>
                 <p>
-
                     객체를 선언한 후 객체 방식으로 데이터를 입력하는 방법은 객체의 각 속성을 직접 지정하여 값을 할당하는 방법입니다. 이 방법은 객체를 초기화할 때 각 속성과 값을 명시적으로 지정할
                     수 있어 가독성이 좋습니다.이 방법은 특히 초기화할 때 속성이 많거나 값이 복잡한 경우에 유용하며, 객체의 속성 이름이 변하지 않는 경우에 적합합니다.
                 </p>
                 <pre><code>{
 const obj = new Object();
-
 obj.a = 100;
 obj.b = 200;
 obj.c = "javascript";
+
+console.log(obj.a);
+console.log(obj.b);
+console.log(obj.c);     
 }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
+                            100<br>
+                            200<br>
+                            javascript
                         </div>
                     </details>
                     <details>
                         <summary>설명</summary>
                         <div>위 코드는 JavaScript에서 객체를 생성하고, 해당 객체의 속성에 값을 할당하는 예제입니다.<br>
-
                             const obj = new Object();: 빈 객체를 생성합니다. 이 객체는 obj 변수에 할당됩니다.<br>
-
                             obj.a = 100;: 객체 obj의 속성으로 "a"라는 문자열을 키로 하고, 값으로 100을 할당합니다.<br>
-
                             obj.b = 200;: 객체 obj의 속성으로 "b"라는 문자열을 키로 하고, 값으로 200을 할당합니다.<br>
-
                             obj.c = "javascript";: 객체 obj의 속성으로 "c"라는 문자열을 키로 하고, 값으로 문자열 "javascript"을 할당합니다.<br>
-
                             이러한 방식으로 객체의 속성은 키(key)와 값(value)의 쌍으로 구성되며, 이 쌍은 객체의 속성(property)으로 알려져 있습니다.
                             JavaScript에서 객체는 다양한 타입의 속성을 포함할 수 있으며, 이 예제에서는 숫자와 문자열을 포함하고 있습니다.
                         </div>
@@ -694,28 +706,36 @@ console.log(obj.c);
                     접근: 이러한 중첩된 객체들은 점 표기법(.)이나 대괄호 표기법([])을 통해 접근할 수 있습니다.
                 </p>
                 <pre><code>{
-    const obj = {
+    const obj = [
+    {
         a: 100,
-        b: [200, 300],
-        c: "javascript",
+        b: 200,
+        c: "javascript"
+    },
+    {
+        a: 300,
+        b: 400,
+        c: "jquery"
     }
+]
 
-    console.log(obj.a)      //100
-    console.log(obj.b)      //200,300
-    console.log(obj.b[0])   //200
-    console.log(obj.b[1])   //300
-    console.log(obj.c)      //javascript
-}
-</code></pre>
+console.log(obj[0].a);
+console.log(obj[0].b);
+console.log(obj[0].c);
+console.log(obj[1].a);
+console.log(obj[1].b);
+console.log(obj[1].c);
+}</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
                             100<br>
-                            200,300<br>
                             200<br>
+                            javascript<br>
                             300<br>
-                            javascript
+                            400<br>
+                            jquery
                         </div>
                     </details>
                     <details>
@@ -760,38 +780,29 @@ console.log(obj.c);
                     객체 안의 배열에 접근하고 내부의 요소에 접근하는 방법을 사용할 수 있습니다.
                 </p>
                 <pre><code>{
-
-                    const obj = [
 {
-    a: 100,
-    b: 200,
-    c: "javascript",
-}, {
-    a: 300,
-    b: 400,
-    c: "jquery",
-}
-];
+    const obj = {
+        a: 100,
+        b: [200, 300],
+        c: "javascript"
+    }
 
-console.log("17. 객체 : 표현방법5");
-console.log(obj[0].a)   //100
-console.log(obj[0].b)   //200
-console.log(obj[0].c)   //javascript
-console.log(obj[1].a)   //300
-console.log(obj[1].b)   //400
-console.log(obj[1].c)   //jquery
+    console.log(obj.a)          //100
+    console.log(obj.b)          //200, 300
+    console.log(obj.b[0])       //200
+    console.log(obj.b[1])       //300
+    console.log(obj.c)          //javascript
 }
-</code></pre>
+}</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
                             100<br>
+                            200, 300<br>
                             200<br>
-                            javascript<br>
                             300<br>
-                            400<br>
-                            jquery
+                            javascript
                         </div>
                     </details>
                     <details>
@@ -847,13 +858,13 @@ console.log(obj[1].c)   //jquery
 const obj = {
     a: 100,
     b: { x: 200, y: 300 },
-    d: "javascript"
+    c: "javascript"
 }
 
-console.log(obj.a);
-console.log(obj.b.x);
-console.log(obj.b.y);
-console.log(obj.d);
+console.log(obj.a)      //100
+console.log(obj.b.x)    //200
+console.log(obj.b.y)    //300
+console.log(obj.c)      //javascrit
 </code></pre>
                 <div class="result">
                     <details>
@@ -888,40 +899,34 @@ console.log(obj.d);
                 <h3>20. 객체 : 데이터 저장(키와값) : 표현방법8 : 객체 안에 함수가 있는 방식</h3>
                 <P>
                     JavaScript에서 객체는 데이터를 저장하기 위한 구조로, 키(key)와 값(value)의 쌍으로 구성됩니다. 객체 안에 함수를 포함하는 방식은 객체지향 프로그래밍에서 주요한
-                    개념 중 하나인 메서드(method)를 정의하는 것입니다.<br>
-
+                    개념 중 하나인 메서드(method)를 정의하는 것입니다.
                     메서드는 객체 안에 정의된 함수를 가리키며, 일반적으로 객체가 수행할 수 있는 동작을 나타냅니다. 이는 객체가 가지고 있는 데이터를 조작하거나 다른 객체와 상호 작용하는 등의
-                    작업을 수행할 수 있도록 해줍니다.<br>
-
+                    작업을 수행할 수 있도록 해줍니다.
                     예를 들어, 다음과 같이 객체를 정의하고 메서드를 포함시킬 수 있습니다.
                 </p>
                 <pre><code>{    
 const obj = {
     a: 100,
     b: [200, 300],
-    c: { x: 400, y: 500 },
-    d: "javascript",
-    e: function () {
+    c: "javascript",
+    d: function () {
         console.log("javascript가 실행되었습니다.");
     },
-    f: function () {
-        console.log(obj.d + "가 실행되었습니다.");
+    e: function () {
+        console.log(obj.c + "가 실행되었습니다.")
     },
-    g: function () {
-        console.log(this.d + "가 실행되었습니다.");
-    },
+    f: function () {             //this = 불러오기
+        console.log(this.c + "가 실행되었습니다.")
+    }
 }
-
 console.log(obj.a);
 console.log(obj.b[0]);
 console.log(obj.b[1]);
-console.log(obj.b.x);
-console.log(obj.b.y);
-console.log(obj.d);
+console.log(obj.c);
+obj.d();
 obj.e();
 obj.f();
-obj.g();
-</code></pre>
+}</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
@@ -929,9 +934,8 @@ obj.g();
                             100<br>
                             200<br>
                             300<br>
-                            undefined<br>
-                            undefined<br>
                             javascript<br>
+                            javascript가 실행되었습니다.<br>
                             javascript가 실행되었습니다.<br>
                             javascript가 실행되었습니다.<br>
                         </div>
@@ -1055,9 +1059,9 @@ const obj2 = { c: 300, d: 400, }
 const merge1 = { ...obj1, ...obj2 }
 const merge2 = { ...obj1, x: "javascript", ...obj2, y: "jquery" }
 
-console.log(obj1);  // { a: 100, b: 200 }
-console.log(merge1); // { a: 100, b: 200, c: 300, d: 400 }
-console.log(merge2); // { a: 100, b: 200, x: "javascript", c: 300, d: 400, y: "jquery"}
+console.log(obj1);  
+console.log(merge1);
+console.log(merge2); 
 }</code></pre>
                 <div class="result">
                     <details>
@@ -1101,33 +1105,21 @@ console.log(merge2); // { a: 100, b: 200, x: "javascript", c: 300, d: 400, y: "j
             <div id="sample23" class="sample">
                 <h3>23. 파일 : 데이터 교환(JSON)</h3>
                 <P>
-                    객체 펼침 연산자는 JavaScript에서 객체를 확장하거나 병합할 때 사용되는 특별한 연산자입니다. 이 연산자를 사용하면 객체의 속성을 새로운 객체로 복사하거나 다른 객체와
-                    병합할 수 있습니다.
-                </P>
-                <P>
-                    펼침 연산자(...): 펼침 연산자는 세 개의 점(...)으로 구성됩니다. 객체 앞에 사용하면 해당 객체의 속성을 복사하거나 다른 객체와 병합합니다.
-                <P>
-                    객체 확장: 객체 펼침 연산자를 사용하여 다른 객체의 속성을 현재 객체로 확장할 수 있습니다. 이는 객체를 복제하는 것과 유사하게 동작합니다.
-                </p>
-                <P>
-                    객체 병합: 객체 펼침 연산자를 사용하여 두 개 이상의 객체를 병합할 수 있습니다. 이때, 뒤에 오는 객체의 속성이 덮어쓰기 됩니다.
+                    JSON은 데이터를 저장하거나 전송할 때 사용되는 경량의 데이터 교환 형식입니다. 자바스크립트 객체 표기법을 기반으로 하며, 사람과 기계 모두가 이해하기 쉽습니다.
                 </p>
                 <pre><code>{
-    {
-        // 01 JSON 데이터 --&gt; 객체 변환
-        const jsonString = '{ "name": "Hwang", "age": 30}';
-        const jsonObject = JSON.parse(jsonString);
+    const jsonString = '{"name":"Hwang","age": 30}'
+    const jsonObject = JSON.parse(jsonString);
 
-        console.log(jsonObject.name);   // Hwang
-        console.log(jsonObject.age);    // 30
-    }
-    {
-        // 02 객체 파일 --&gt; JSON 데이터
-        const person = { name: "Hwang", age: 30 }
-        const jsonString = JSON.stringify(person);
+    console.log(jsonObject.name);
+    console.log(jsonObject.age);
+}   
+{
+    // 02 객체 파일 --> JSON 데이터
+    const person = { name: "Hwang, age:30" }
+    const jsonString = JSON.stringify(person);
 
-        console.log(jsonString);    // {"name":"Hwang","age":30}
-    }
+    console.log(jsonString);
 }
 </code></pre>
                 <div class="result">
