@@ -1083,26 +1083,25 @@ console.log(merge2); // { a: 100, b: 200, x: "javascript", c: 300, d: 400, y: "j
                     추가로 in 연산자를 사용하는 방법이 있으며, 결과는 동일하게 출력됩니다.
                 </P>
                 <pre><code>{
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
 
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        var responseData = xhr.responseText;
-        var jsonData = JSON.parse(responseData);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var responseData = xhr.responseText;
+            var jsonData = JSON.parse(responseData);
 
-        console.log(jsonData);
-    } else if (xhr.readyState === 4) {
-        console.error("데이터 불러오기 오류: " + xhr.status);
-    }
-};
-
-xhr.send();
+            console.log(jsonData);
+        } else if (xhr.readyState === 4) {
+            console.error("데이터 불러오기 오류: " + xhr.status);
+        };
+    };
 }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
+                            (60) {[{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}}
                         </div>
                     </details>
                 </div>
@@ -1132,7 +1131,7 @@ fetch("https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json")
                     <details>
                         <summary>결과 확인하기</summary>
                         <div>
-
+                            (60) {[{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}}
                         </div>
                     </details>
                 </div>
@@ -1565,6 +1564,7 @@ fetch("https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json")
                     console.error("데이터 불러오기 오류: " + xhr.status);
                 }
             };
+
 
             xhr.send();
         }
