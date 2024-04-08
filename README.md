@@ -79,4 +79,6 @@ https://prismjs.com/
 웹디자인기능사유튜브_ https://www.youtube.com/watch?v=pLxtF5yAw84&list=PL4UVBBIc6giK95pWwwoTQP82aI9iGNo-g&index=7   
 웹호스팅_ https://www.dothome.co.kr/   
 설문조사 데이터 사이트_ https://www.data.go.kr/   
+3D 사이트_ https://threejs.org/   
+ 코드 틀린거 알려줌_ https://wrtn.ai/     
 
