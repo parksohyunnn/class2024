@@ -80,5 +80,16 @@ https://prismjs.com/
 웹호스팅_ https://www.dothome.co.kr/   
 설문조사 데이터 사이트_ https://www.data.go.kr/   
 3D 사이트_ https://threejs.org/   
- 코드 틀린거 알려줌_ https://wrtn.ai/     
+코드 틀린거 알려줌_ https://wrtn.ai/  
 
+웹사이트 레퍼런스_ https://tympanus.net/codrops/   
+웹사이트 레퍼런스_ https://www.awwwards.com/   
+웹사이트 레퍼런스_ https://codepen.io/   
+
+디자인 개발 뉴스_ https://www.surfit.io/   
+
+ codepen/awwwards/unsplash
+
+ chrome 웹 스토어 접속 후 "muzli" 검색하고 다운 _ 웹사이트 모음집
+ chrome 웹 스토어 접속 후 "whatfont" 검색하고 다운 _ 폰트 검색
+ chrome 웹 스토어 접속 후 "vue.js devtools" 검색하고 다운 _
