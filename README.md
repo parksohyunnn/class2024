@@ -74,13 +74,16 @@ https://prismjs.com/
 3D 오브젝트 제작 사이트_ https://spline.design/   
 선생님 깃허브_ https://github.com/webs9919/class2024/tree/main/mysql   
 폰트를 변환시켜주는 사이트_https://gero3.github.io/facetype.js/   
-소현 깃허브_ https://github.com/parksohyunnn   
+소현 깃허브_https://github.com/parksohyunnn/class2024   
+소현 깃허브 프로필_ https://github.com/parksohyunnn   
 웹폰트 사이트_ https://wess.tistory.com/   
 웹디자인기능사유튜브_ https://www.youtube.com/watch?v=pLxtF5yAw84&list=PL4UVBBIc6giK95pWwwoTQP82aI9iGNo-g&index=7   
 웹호스팅_ https://www.dothome.co.kr/   
 설문조사 데이터 사이트_ https://www.data.go.kr/   
 3D 사이트_ https://threejs.org/   
 코드 틀린거 알려줌_ https://wrtn.ai/  
+그라디언트 웹 사이트_ https://webzz.tistory.com/380  
+태그 단축키_ https://docs.emmet.io/cheat-sheet/    
 
 웹사이트 레퍼런스_ https://tympanus.net/codrops/   
 웹사이트 레퍼런스_ https://www.awwwards.com/   
