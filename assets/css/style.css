@@ -129,13 +129,12 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 30px;
+        margin: 15px;
         cursor: pointer;
         text-align: center;
 
         img {
-            width: 50px;
-            border-radius: 50%;
+            width: 75px;
         }
 
         span {
