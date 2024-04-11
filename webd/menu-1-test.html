@@ -96,53 +96,23 @@
             background-color: #8FAF4F;
         }
 
-        /* nav */
         .nav {}
 
         .nav>ul {
             display: flex;
             justify-content: right;
             margin-top: 30px;
-            margin-left: auto;
-            width: fit-content;
         }
 
         .nav>ul>li>a {
             padding: 10px 50px;
-            background-color: #B0B0B0;
-            display: inline-block;
         }
 
-        .nav>ul>li>a:hover {
-            background-color: #A1A1A1;
-        }
+        .nav>ul>li>ul {}
 
-        .nav>ul>li>ul {
-            text-align: center;
-            display: none;
-        }
+        .nav>ul>li>ul>li>a {}
 
-        .nav>ul>li>ul>li>a {
-            background-color: #C1C1C1;
-            padding: 10px;
-            width: 100%;
-            display: inline-block;
-            /* border값 뺄때 사용 */
-            box-sizing: border-box;
-        }
-
-        .nav>ul>li>ul>li>a:hover {
-            background-color: #888888;
-        }
-
-        /* 자바스트립트 CSS */
-        .nav>ul>li>ul {
-            display: block;
-            height: 0px;
-            /* height-158px */
-            overflow: hidden;
-            transition: all 600ms;
-        }
+        /* nav */
     </style>
 </head>
 
@@ -205,29 +175,10 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        // $(function () {
-        //     $(".nav>ul>li").mouseover(function () {
-        //         $(".nav>ul>li>ul").stop().slideDown();
-        //     });
-        //     $(".nav>ul>li").mouseout(function () {
-        //         $(".nav>ul>li>ul").stop().slideUp();
-        //     });
-        // });
+
     </script>
     <script>
-        window.onload = function () {
-            const navList = document.querySelector(".nav > ul");
-            navList.addEventListener("mouseover", function () {
-                navList.querySelectorAll(".submenu").forEach(sub => {
-                    sub.style.height = "158px"
-                })
-            })
-            navList.addEventListener("mouseout", function () {
-                navList.querySelectorAll(".submenu").forEach(sub => {
-                    sub.style.height = "0px"
-                })
-            })
-        }
+
     </script>
 </body>
 

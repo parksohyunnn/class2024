@@ -83,16 +83,18 @@ https://prismjs.com/
 3D 사이트_ https://threejs.org/   
 코드 틀린거 알려줌_ https://wrtn.ai/  
 그라디언트 웹 사이트_ https://webzz.tistory.com/380  
-태그 단축키_ https://docs.emmet.io/cheat-sheet/    
+태그 단축키_ https://docs.emmet.io/cheat-sheet/  
+아이콘 사이트_ https://react-icons.github.io/react-icons/search/#q=git       
 
 웹사이트 레퍼런스_ https://tympanus.net/codrops/   
 웹사이트 레퍼런스_ https://www.awwwards.com/   
 웹사이트 레퍼런스_ https://codepen.io/   
 
 디자인 개발 뉴스_ https://www.surfit.io/   
+jQuery_ https://developers.google.com/speed/libraries?hl=ko#jquery     
 
- codepen/awwwards/unsplash
+ codepen/awwwards/unsplash   
 
- chrome 웹 스토어 접속 후 "muzli" 검색하고 다운 _ 웹사이트 모음집
- chrome 웹 스토어 접속 후 "whatfont" 검색하고 다운 _ 폰트 검색
- chrome 웹 스토어 접속 후 "vue.js devtools" 검색하고 다운 _
+ chrome 웹 스토어 접속 후 "muzli" 검색하고 다운 _ 웹사이트 모음집   
+ chrome 웹 스토어 접속 후 "whatfont" 검색하고 다운 _ 폰트 검색   
+ chrome 웹 스토어 접속 후 "vue.js devtools" 검색하고 다운 _   
