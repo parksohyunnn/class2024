@@ -84,7 +84,8 @@ https://prismjs.com/
 코드 틀린거 알려줌_ https://wrtn.ai/  
 그라디언트 웹 사이트_ https://webzz.tistory.com/380  
 태그 단축키_ https://docs.emmet.io/cheat-sheet/  
-아이콘 사이트_ https://react-icons.github.io/react-icons/search/#q=git       
+아이콘 사이트_ https://react-icons.github.io/react-icons/search/#q=git   
+웹폰트로 변환해주는 사이트_ https://transfonter.org       
 
 웹사이트 레퍼런스_ https://tympanus.net/codrops/   
 웹사이트 레퍼런스_ https://www.awwwards.com/   
