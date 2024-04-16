@@ -86,14 +86,14 @@ https://prismjs.com/
 태그 단축키_ https://docs.emmet.io/cheat-sheet/  
 아이콘 사이트_ https://react-icons.github.io/react-icons/search/#q=git   
 웹폰트로 변환해주는 사이트_ https://transfonter.org       
-
+svg 코드 바꿔주는 사이트_ https://yoksel.github.io/url-encoder/   
 웹사이트 레퍼런스_ https://tympanus.net/codrops/   
 웹사이트 레퍼런스_ https://www.awwwards.com/   
 웹사이트 레퍼런스_ https://codepen.io/   
-
+웹사이트 레퍼런스_ https://wsss.tistory.com/   
 디자인 개발 뉴스_ https://www.surfit.io/   
 jQuery_ https://developers.google.com/speed/libraries?hl=ko#jquery     
-
+제플린_ https://app.zeplin.io/   
  codepen/awwwards/unsplash   
 
  chrome 웹 스토어 접속 후 "muzli" 검색하고 다운 _ 웹사이트 모음집   
