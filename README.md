@@ -92,9 +92,12 @@ svg 코드 바꿔주는 사이트_ https://yoksel.github.io/url-encoder/
 웹사이트 레퍼런스_ https://codepen.io/   
 웹사이트 레퍼런스_ https://wsss.tistory.com/   
 디자인 개발 뉴스_ https://www.surfit.io/   
+세리프 폰트 레퍼런스 사이트_ https://pangrampangram.com/   
 jQuery_ https://developers.google.com/speed/libraries?hl=ko#jquery     
 제플린_ https://app.zeplin.io/   
  codepen/awwwards/unsplash   
+
+ https://gsap.com/   
 
  chrome 웹 스토어 접속 후 "muzli" 검색하고 다운 _ 웹사이트 모음집   
  chrome 웹 스토어 접속 후 "whatfont" 검색하고 다운 _ 폰트 검색   

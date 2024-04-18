@@ -53,26 +53,28 @@
 
             .nav {}
 
-            .nav ul {
-                justify-content: right;
+            .nav>ul {
                 display: flex;
+                justify-content: right;
                 margin-top: 30px;
+
             }
 
-            .nav ul li {
+            .nav>ul>li {}
+
+            .nav>ul>li>a {
                 display: inline-block;
+                padding: 10px 50px;
                 background-color: #9d9d9d;
             }
 
-            .nav ul li a {}
-
-            .nav ul li ul {
+            .nav>ul>li>ul {
                 display: none;
             }
 
-            .nav ul li ul li {}
+            .nav>ul>li>ul>li {}
 
-            .nav ul li ul li a {}
+            .nav>ul>li>ul>li>a {}
 
             #slider {
                 width: 100%;
@@ -136,10 +138,41 @@
                 <div class="logo"></div>
                 <nav class="nav">
                     <ul>
-
+                        <li class><a href="#">메인</a>
+                            <ul>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                            </ul>
+                        </li>
+                        <li class><a href="#">메인</a>
+                            <ul>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                            </ul>
+                        </li>
+                        <li class><a href="#">메인</a>
+                            <ul>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                            </ul>
+                        </li>
+                        <li class><a href="#">메인</a>
+                            <ul>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                                <li class="submunu"><a href="#">서브메인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
             </div>
-            <!-- //header -->
 
             <div id="slider">
             </div>
