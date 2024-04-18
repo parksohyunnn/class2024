@@ -168,12 +168,19 @@
         // $("nav>ul>li").click(function () {
         //     $("nav>ul>li>ul>li").css("display", "none");
         // });
-        $("nav>ul>li").mouseover(function () {
-            $("nav>ul>li>ul>li").css("display", "none");
-        });
-        $("nav>ul>li").mouseout(function () {
-            $("nav>ul>li>ul>li").css("display", "block")
-        });
+        // $("nav>ul>li").mouseover(function () {
+        //     $("nav>ul>li>ul>li").css("display", "none");
+        // });
+        // $("nav>ul>li").mouseout(function () {
+        //     $("nav>ul>li>ul>li").css("display", "block")
+        // });
+
+
+        const tabBtn = $(".notice > ul > li");
+        const tabCont = $(".notice > .cont > div");
+
+        tabCont.hide().eq(0).show();
+        tabBtn.click(function () { })
     </script>
 </body>
 

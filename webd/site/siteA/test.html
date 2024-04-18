@@ -5,15 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/test.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #slider {
+            margin: 0 auto;
+        }
+
+        .slider-wrap {}
+
+        .slider-wrap .slider {}
+
+        .slider-wrap .slider.s2 {}
+
+        .slider-wrap .slider.s3 {}
+    </style>
 </head>
 
 <body>
-    <div id="wrap">
-        <header id="header"></header>
-        <section id="slider"></section>
-        <main id="contents"></main>
-        <footer id="footer"></footer>
+    <div id="slider">
+        <div class="slider-wrap">
+            <div class="slider s1"></div>
+            <div class="slider s2"></div>
+            <div class="slider s3"></div>
+        </div>
     </div>
 </body>
 
