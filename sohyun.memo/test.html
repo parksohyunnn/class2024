@@ -4,198 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link href="https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css" rel="stylesheet">
-    <!DOCTYPE html>
-    <html lang="ko">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>웹디자인 기능사 레이아웃 메뉴 M-1</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: "Cafe24SsurroundAir";
-                font-weight: normal;
-            }
-
-            li {
-                list-style: none;
-            }
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-
-            #wrap {
-                width: 1200px;
-                margin: 0 auto;
-            }
-
-            #header {
-                width: 100%;
-                display: flex;
-            }
-
-            #header .logo {
-                width: 20%;
-                height: 100px;
-                background-color: #efefef;
-            }
-
-            #header .nav {
-                width: 80%;
-                background-color: #e3e3e3;
-            }
-
-            .nav {}
-
-            .nav>ul {
-                display: flex;
-                justify-content: right;
-                margin-top: 30px;
-
-            }
-
-            .nav>ul>li {}
-
-            .nav>ul>li>a {
-                display: inline-block;
-                padding: 10px 50px;
-                background-color: #9d9d9d;
-            }
-
-            .nav>ul>li>ul {
-                display: none;
-            }
-
-            .nav>ul>li>ul>li {}
-
-            .nav>ul>li>ul>li>a {}
-
-            #slider {
-                width: 100%;
-                height: 300px;
-                background-color: #d9d9d9;
-            }
-
-            #contents {
-                width: 100%;
-                display: flex;
-            }
-
-            #contents .content1 {
-                width: 33.3333%;
-                height: 200px;
-                background-color: #d1d1d1;
-            }
-
-            #contents .content2 {
-                width: 33.3333%;
-                height: 200px;
-                background-color: #c7c7c7;
-            }
-
-            #contents .content3 {
-                width: 33.3333%;
-                height: 200px;
-                background-color: #bcbcbc;
-            }
-
-            #footer {
-                width: 100%;
-                display: flex;
-            }
-
-            #footer .footer1 {
-                width: 20%;
-                height: 100px;
-                background-color: #b1b1b1;
-            }
-
-            #footer .footer2 {
-                width: 60%;
-                height: 100px;
-                background-color: #a3a3a3;
-            }
-
-            #footer .footer3 {
-                width: 20%;
-                height: 100px;
-                background-color: #9d9d9d;
-            }
-        </style>
-    </head>
+    <title>Vallery Festival</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
 <body>
-
-    <body>
-        <div id="wrap">
-            <div id="header">
-                <div class="logo"></div>
-                <nav class="nav">
-                    <ul>
-                        <li class><a href="#">메인</a>
-                            <ul>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                            </ul>
-                        </li>
-                        <li class><a href="#">메인</a>
-                            <ul>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                            </ul>
-                        </li>
-                        <li class><a href="#">메인</a>
-                            <ul>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                            </ul>
-                        </li>
-                        <li class><a href="#">메인</a>
-                            <ul>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                                <li class="submunu"><a href="#">서브메인</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="slider">
-            </div>
-            <!-- //slider -->
-
-            <div id="contents">
-                <div class="content1"></div>
-                <div class="content2"></div>
-                <div class="content3"></div>
-            </div>
-            <!-- //contents -->
-
-            <div id="footer">
-                <div class="footer1"></div>
-                <div class="footer2"></div>
-                <div class="footer3"></div>
-            </div>
-            <!-- //footer -->
-        </div>
-        <!-- //wrap -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-
-    </body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo"></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="main">MENU-1</a>
+                        <ul>
+                            <li><a href="sub">SubMenu-1</a></li>
+                            <li><a href="sub">SubMenu-2</a></li>
+                            <li><a href="sub">SubMenu-3</a></li>
+                            <li><a href="sub">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="main">MENU-2</a>
+                        <ul>
+                            <li><a href="sub">SubMenu-1</a></li>
+                            <li><a href="sub">SubMenu-2</a></li>
+                            <li><a href="sub">SubMenu-3</a></li>
+                            <li><a href="sub">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="main">MENU-3</a>
+                        <ul>
+                            <li><a href="sub">SubMenu-1</a></li>
+                            <li><a href="sub">SubMenu-2</a></li>
+                            <li><a href="sub">SubMenu-3</a></li>
+                            <li><a href="sub">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="main">MENU-4</a>
+                        <ul>
+                            <li><a href="sub">SubMenu-1</a></li>
+                            <li><a href="sub">SubMenu-2</a></li>
+                            <li><a href="sub">SubMenu-3</a></li>
+                            <li><a href="sub">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <article id="slider">
+                <div class="slider__wrap">
+                    <div class="slider1"></div>
+                    <div class="slider2"></div>
+                    <div class="slider3"></div>
+                </div>
+            </article>
+            <section id="contents">
+                <div class="contents__1"></div>
+                <div class="contents__2"></div>
+                <div class="contents__3"></div>
+            </section>
+            <footer id="footer">
+                <div class="footer__1"></div>
+                <div class="footer__2">
+                    <div class="footer__2-1"></div>
+                    <div class="footer__2-2"></div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
 
 </html>
