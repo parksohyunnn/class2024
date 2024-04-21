@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹디자인 기능사 메뉴 M-1</title>
+    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: 'NanumSquareNeo';
         }
 
         li {
@@ -93,7 +95,52 @@
             background-color: #9d9d9d;
         }
 
-        출처: https: //webstoryboy.co.kr/1890 [WEBSTORYBOY:티스토리]
+        /* nav */
+        .nav {}
+
+        .nav>ul {
+            display: flex;
+            justify-content: right;
+            margin-top: 30px;
+        }
+
+        .nav>ul>li {
+            position: relative;
+        }
+
+        .nav>ul>li>a {
+            display: inline-block;
+            padding: 10px 50px;
+            background-color: #b1b1b1;
+        }
+
+        .nav>ul>li>a:hover {
+            background-color: blue;
+        }
+
+        .nav>ul>li>ul {
+            position: absolute;
+            left: 0;
+            top: 38px;
+            background-color: #ccc;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .nav>ul>li>ul>li {}
+
+        .nav>ul>li>ul>li>a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #9d9d9d;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav>ul>li>ul>li>a:hover {
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -103,7 +150,42 @@
         <div id="wrap">
             <div id="header">
                 <div class="logo"></div>
-                <nav class="nav"></nav>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">메인1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴1-1</a></li>
+                                <li><a href="#">서브메뉴1-1</a></li>
+                                <li><a href="#">서브메뉴1-1</a></li>
+                                <li><a href="#">서브메뉴1-1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메인1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴2-1</a></li>
+                                <li><a href="#">서브메뉴2-1</a></li>
+                                <li><a href="#">서브메뉴2-1</a></li>
+                                <li><a href="#">서브메뉴2-1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메인1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메인1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <!-- //header -->
 
@@ -126,6 +208,19 @@
             <!-- //footer -->
         </div>
         <!-- //wrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                //메뉴에 오버했을 때 자식 메뉴를 보여줘라
+                $(".nav>ul>li").mouseover(function () {
+                    $(this).find(".submenu").stop().slideDown();
+                });
+                $(".nav>ul>li").mouseout(function () {
+                    $(this).find(".submenu").stop().slideUp();
+                });
+            });
+        </script>
     </body>
 </body>
 
