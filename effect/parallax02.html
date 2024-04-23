@@ -78,6 +78,7 @@
             width: 100%;
             text-align: center;
             background-color: #8d7d57;
+            color: aliceblue;
         }
 
         #section08 {
@@ -88,12 +89,20 @@
             font-size: 2vw;
             line-height: 1.5;
             text-transform: uppercase;
+            color: aliceblue;
         }
 
         #section08 .img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
+        }
+
+
+        #section09 .text {
+            font-size: 2vw;
+            line-height: 1.5;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -187,7 +196,10 @@
 
                 <section id="section09">
                     <span class="num">09</span>
-                    <div class="img"></div>
+                    <div class="img i1"></div>
+                    <div class="img i2"></div>
+                    <div class="text t1">Hello</div>
+                    <div class="text t2">반갑습니다.</div>
                 </section>
                 <!-- //section09 -->
 
@@ -383,6 +395,31 @@
             markers: true
         });
 
+
+        // 09
+        const ani9 = gsap.timeline();
+
+        ani9.from("#section09 .i1", {
+            autoAlpha: 0,
+            scale: 10,
+            width: "150vh",
+            height: "150vh",
+            rotation: 200,
+        })
+            .from("#section09 .i2", { x: innerWidth * -1 })
+            .from("#section09 .t1", { scale: 60, duration: 2, rotation: 100 })
+            .from("#section09 .t2", { x: innerWidth * 1, rotation: 360, scale: 5.5 })
+
+        ScrollTrigger.create({
+            animation: ani9,
+            trigger: "#section09",
+            start: "top top",
+            end: "+=4000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: true
+        });
     </script>
 </body>
 
