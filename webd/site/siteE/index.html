@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div id="wrap">
+    <header id="header">
+        <h2 class="logo">
+            <a href="#">역사박물관</a>
+        </h2>
+        <div class="nav">
+            <ul>
+                <li><a href="#">박물관 소개</a>
+                    <ul>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">박물관연혁</a></li>
+                        <li><a href="#">유물현황</a></li>
+                        <li><a href="#">관람안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시</a>
+                    <ul>
+                        <li><a href="#">선사시대</a></li>
+                        <li><a href="#">삼국시대</a></li>
+                        <li><a href="#">조선시대</a></li>
+                        <li><a href="#">근대시대</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">연구</a>
+                    <ul>
+                        <li><a href="#">생활유적</a></li>
+                        <li><a href="#">분묘유적</a></li>
+                        <li><a href="#">생산유적</a></li>
+                        <li><a href="#">통신유적</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">교육</a>
+                    <ul>
+                        <li><a href="#">문화행사</a></li>
+                        <li><a href="#">진로체험</a></li>
+                        <li><a href="#">외부교육</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <section id="section">
+        <div class="notice"></div>
+        <div class="gallery"></div>
+        <div class="link"></div>
+    </section>
+    <!-- //section -->
+
+    <article id="slider"></article>
+    <!-- //article -->
+
+    <footer id="footer">
+        <h3 class="footer1">역사박물관</h3>
+        <div class="footer2">
+            <div class="footer2-1"></div>
+            <div class="footer2-2"></div>
+        </div>
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(".nav>ul>li").mouseover(function () {
+            $(this).find("ul").stop().slideDown();
+        });
+        $(".nav>ul>li").mouseout(function () {
+            $(this).find("ul").stop().slideUp();
+        });
+    </script>
+</div>
+
+<body>
+
+</body>
+
+</html>
