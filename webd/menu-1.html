@@ -99,8 +99,8 @@
         .nav {}
 
         .nav>ul {
-            display: flex;
             justify-content: right;
+            display: flex;
             margin-top: 30px;
         }
 
@@ -110,21 +110,19 @@
 
         .nav>ul>li>a {
             display: inline-block;
+            background-color: #9d9d9d;
             padding: 10px 50px;
-            background-color: #b1b1b1;
         }
 
         .nav>ul>li>a:hover {
-            background-color: blue;
+            background-color: aquamarine
         }
 
         .nav>ul>li>ul {
             position: absolute;
+            top: 37px;
             left: 0;
-            top: 38px;
-            background-color: #ccc;
             width: 100%;
-            text-align: center;
             display: none;
         }
 
@@ -132,14 +130,16 @@
 
         .nav>ul>li>ul>li>a {
             display: inline-block;
-            padding: 10px;
-            background-color: #9d9d9d;
+            text-align: center;
             width: 100%;
+            background-color: #98b896;
             box-sizing: border-box;
+            padding: 10px;
+
         }
 
         .nav>ul>li>ul>li>a:hover {
-            background-color: red;
+            background-color: beige;
         }
     </style>
 </head>
@@ -152,36 +152,36 @@
                 <div class="logo"></div>
                 <nav class="nav">
                     <ul>
-                        <li><a href="#">메인1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴1-1</a></li>
-                                <li><a href="#">서브메뉴1-1</a></li>
-                                <li><a href="#">서브메뉴1-1</a></li>
-                                <li><a href="#">서브메뉴1-1</a></li>
+                        <li><a href="#">main</a>
+                            <ul>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">메인1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴2-1</a></li>
-                                <li><a href="#">서브메뉴2-1</a></li>
-                                <li><a href="#">서브메뉴2-1</a></li>
-                                <li><a href="#">서브메뉴2-1</a></li>
+                        <li><a href="#">main</a>
+                            <ul>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">메인1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴3-1</a></li>
-                                <li><a href="#">서브메뉴3-1</a></li>
-                                <li><a href="#">서브메뉴3-1</a></li>
-                                <li><a href="#">서브메뉴3-1</a></li>
+                        <li><a href="#">main</a>
+                            <ul>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">메인1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴4-1</a></li>
-                                <li><a href="#">서브메뉴4-1</a></li>
-                                <li><a href="#">서브메뉴4-1</a></li>
-                                <li><a href="#">서브메뉴4-1</a></li>
+                        <li><a href="#">main</a>
+                            <ul>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
+                                <li><a href="#">sub</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -211,15 +211,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-            $(function () {
-                //메뉴에 오버했을 때 자식 메뉴를 보여줘라
-                $(".nav>ul>li").mouseover(function () {
-                    $(this).find(".submenu").stop().slideDown();
-                });
-                $(".nav>ul>li").mouseout(function () {
-                    $(this).find(".submenu").stop().slideUp();
-                });
-            });
         </script>
     </body>
 </body>

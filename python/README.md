@@ -1,18 +1,33 @@
 # 파이썬 설치   
    
-설치된 목록 보기
+### 설치된 목록 보기
  ````
  pip3 rist
  ````
  ## requests   
     
- 파이썬 설치하기
+ ### 파이썬 설치하기
  ````
  pip3 install requests
  pip3 install beautifulsoup4
  pip3 install lxml
  pip3 install pandas
  pip3 install selenium
+ pip3 install webdriver_manager
+ ````
+
+## 파이썬 확인 방법
+- cd python
+- python3 들어갈 주소 .py
+
+  ### 초기 셋팅
+ ````
+ import requests as req
+ from bs4 import BeautifulSoup as bs
+ import pandas as pd
+ res = req.get("https://music.bugs.co.kr/chart")
+ # print(res.status_code)  # 200
+ # print(res.text)
  ````
 
  ### 파이썬이란?
