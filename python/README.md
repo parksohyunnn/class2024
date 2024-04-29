@@ -19,6 +19,7 @@
  pip3 install pandas
  pip3 install selenium
  pip3 install webdriver_manager
+ pip3 install html5lib
  ````
 
 ## 파이썬 확인 방법
