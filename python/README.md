@@ -6,6 +6,11 @@
  ````
  ## requests   
     
+### 설치하기
+ ````
+ pip3 install
+ ````
+
  ### 파이썬 설치하기
  ````
  pip3 install requests
@@ -20,7 +25,7 @@
 - cd python
 - python3 들어갈 주소 .py
 
-  ### 초기 셋팅
+### 초기 셋팅
  ````
  import requests as req
  from bs4 import BeautifulSoup as bs
@@ -30,6 +35,16 @@
  # print(res.text)
  ````
 
+
+## 파이썬 브라우저 확인 방법
+ ````
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+browser.get("https://www.music-flo.com/browse")
+ ````
+
+ 
  ### 파이썬이란?
  파이썬은 고급 프로그래밍 언어 중 하나로, 1991년에 발표된 귀도 반 로섬(Guido van Rossum)이 개발한 것으로 알려져 있습니다. 파이썬은 간결하고 읽기 쉬운 문법을 가지고 있어 프로그래머들에게 인기가 높습니다. 이 언어는 다양한 운영 체제에서 사용할 수 있으며, 다양한 목적으로 프로그래밍을 할 때 사용됩니다.   
 

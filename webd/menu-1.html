@@ -99,9 +99,9 @@
         .nav {}
 
         .nav>ul {
-            justify-content: right;
             display: flex;
-            margin-top: 30px;
+            justify-content: right;
+            margin-top: 62px;
         }
 
         .nav>ul>li {
@@ -110,36 +110,38 @@
 
         .nav>ul>li>a {
             display: inline-block;
-            background-color: #9d9d9d;
             padding: 10px 50px;
+            background-color: #a3a3a3;
         }
 
         .nav>ul>li>a:hover {
-            background-color: aquamarine
+            background-color: rebeccapurple;
         }
 
         .nav>ul>li>ul {
+            width: 100%;
             position: absolute;
+            background-color: #b1b1b1;
             top: 37px;
             left: 0;
-            width: 100%;
             display: none;
         }
 
-        .nav>ul>li>ul>li {}
+        .nav>ul>li>ul>li {
+            text-align: center;
+        }
 
         .nav>ul>li>ul>li>a {
             display: inline-block;
-            text-align: center;
-            width: 100%;
-            background-color: #98b896;
-            box-sizing: border-box;
+            background-color: #b1b1b1;
             padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
 
         }
 
         .nav>ul>li>ul>li>a:hover {
-            background-color: beige;
+            background-color: blanchedalmond;
         }
     </style>
 </head>
@@ -153,7 +155,7 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="#">main</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
@@ -161,7 +163,7 @@
                             </ul>
                         </li>
                         <li><a href="#">main</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
@@ -169,7 +171,7 @@
                             </ul>
                         </li>
                         <li><a href="#">main</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
@@ -177,7 +179,7 @@
                             </ul>
                         </li>
                         <li><a href="#">main</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
                                 <li><a href="#">sub</a></li>
@@ -211,6 +213,14 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
+            $(function () {
+                $(".nav > ul > li").mouseover(function () {
+                    $(this).find(".sub").stop().slideDown()
+                });
+                $(".nav > ul > li").mouseout(function () {
+                    $(this).find(".sub").stop().slideUp()
+                });
+            });
         </script>
     </body>
 </body>
