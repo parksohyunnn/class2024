@@ -10,6 +10,10 @@ from datetime import datetime
 import time
 import json
 
+# 현재 날짜 가져오기
+current_date = datetime.now().strftime("%Y-%m-%d")
+filename = f"chart_flo100_{current_date}.json"
+
 # 웹드라이브 설치(수동)
 # browser = webdriver.Chrome()
 # browser.get("https://www.music-flo.com/browse")
@@ -24,8 +28,6 @@ browser.get("https://www.music-flo.com/browse")
 WebDriverWait(browser, 10).until(
     EC.presence_of_element_located((By.CLASS_NAME, "chart_lst"))
 )
-
-time.sleep(10);
 
 # "더보기" 버튼을 찾아 클릭
 try:
@@ -42,4 +44,28 @@ except Exception as e:
 # 업데이트된 페이지 소스를 변수에 저장
 html_source_updated = browser.page_source
 soup = BeautifulSoup(html_source_updated, 'html.parser')
-print(soup)
+
+# 데이터 추출
+music_data = []
+tracks = soup.select(".chart_lst .track_list_table tbody tr")
+for track in tracks:
+    rank = track.select_one(".num").text.strip()
+    title = track.select_one(".tit__text").text.strip()
+    artist = track.select_one(".artist__link").text.strip()
+    album = track.select_one(".album").text.strip()
+    image_url = track.select_one(".thumb img").get('data-src')
+
+    music_data.append({
+        "rank": rank,
+        "title": title,
+        "artist": artist,
+        "imageURL": image_url,
+        "album": album
+    })
+
+# 데이터를 JSON 파일로 저장
+with open(filename, 'w', encoding='utf-8') as f:
+    json.dump(music_data, f, ensure_ascii=False, indent=4)
+
+# 브라우저 종료
+browser.quit()
