@@ -101,7 +101,7 @@
         .nav>ul {
             display: flex;
             justify-content: right;
-            margin-top: 62px;
+            margin-top: 60px;
         }
 
         .nav>ul>li {
@@ -111,37 +111,35 @@
         .nav>ul>li>a {
             display: inline-block;
             padding: 10px 50px;
-            background-color: #a3a3a3;
+            background-color: #9d9d9d;
+
         }
 
         .nav>ul>li>a:hover {
-            background-color: rebeccapurple;
+            background-color: palegreen;
         }
 
         .nav>ul>li>ul {
-            width: 100%;
             position: absolute;
-            background-color: #b1b1b1;
-            top: 37px;
+            top: 38px;
             left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #9b8f8f;
             display: none;
         }
 
-        .nav>ul>li>ul>li {
-            text-align: center;
-        }
+        .nav>ul>li>ul>li {}
 
         .nav>ul>li>ul>li>a {
             display: inline-block;
-            background-color: #b1b1b1;
-            padding: 10px;
+            padding: 10px 20px;
             width: 100%;
             box-sizing: border-box;
-
         }
 
         .nav>ul>li>ul>li>a:hover {
-            background-color: blanchedalmond;
+            background-color: purple;
         }
     </style>
 </head>
@@ -213,13 +211,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-            $(function () {
-                $(".nav > ul > li").mouseover(function () {
-                    $(this).find(".sub").stop().slideDown()
-                });
-                $(".nav > ul > li").mouseout(function () {
-                    $(this).find(".sub").stop().slideUp()
-                });
+            $(".nav>ul>li").mouseover(function () {
+                $(this).find(".sub").stop().slideDown();
+            });
+            $(".nav>ul>li").mouseout(function () {
+                $(this).find(".sub").stop().slideUp();
             });
         </script>
     </body>
