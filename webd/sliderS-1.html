@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slider-1</title>
+    <title>Document</title>
     <style>
         * {
             margin: 0;
@@ -98,59 +98,58 @@
 
         .sliderWrap .slider span {
             position: absolute;
-            top: 50%;
             left: 50%;
-            background-color: rgba(0, 0, 0, 0.4);
-            transform: translate(-50%, -50%);
+            top: 50%;
+            background-color: rgba(0, 0, 0, .3);
             padding: 10px 20px;
+            color: #efefef;
+            transform: translate(-50%, -50%);
+
         }
     </style>
 </head>
 
 <body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </header>
+        <!-- //header -->
 
-    <body>
-        <div id="wrap">
-            <header id="header">
-                <h1 class="logo"></h1>
-                <nav class="nav"></nav>
-            </header>
-            <!-- //header -->
-
-            <article id="slider">
-                <div class="sliderWrap">
-                    <div class="slider s1">
-                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지설명">
-                        <span>이미지1</span>
-                    </div>
-                    <div class="slider s2">
-                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지설명">
-                        <span>이미지2</span>
-                    </div>
-                    <div class="slider s3">
-                        <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="이미지설명">
-                        <span>이미지3</span>
-                    </div>
+        <article id="slider">
+            <div class="sliderWrap">
+                <div class="slider s1">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg" alt="이미지 설명">
+                    <span>이미지1</span>
                 </div>
-            </article>
-            <!-- //slider -->
+                <div class="slider s2">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지">
+                    <span>이미지2</span>
+                </div>
+                <div class="slider s3">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="이미지">
+                    <span>이미지3</span>
+                </div>
+            </div>
+        </article>
+        <!-- //slider -->
 
-            <main id="contents">
-                <section class="content1"></section>
-                <section class="content2"></section>
-                <section class="content3"></section>
-            </main>
-            <!-- //contents -->
+        <main id="contents">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3"></section>
+        </main>
+        <!-- //contents -->
 
-            <footer id="footer">
-                <div class="footer1"></div>
-                <div class="footer2"></div>
-                <div class="footer3"></div>
-            </footer>
-            <!-- //footer -->
-        </div>
-        <!-- //wrap -->
-    </body>
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
 </body>
 
 </html>
