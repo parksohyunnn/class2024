@@ -126,82 +126,30 @@
         }
 
         /* sliderwrap */
-        .sliderwrap {
+        #slider {
+            overflow: hidden;
+        }
+
+        .sliderWrap {
+            display: flex;
+        }
+
+        .sliderWrap .slider {
             position: relative;
         }
 
-        .sliderwrap .slider {
-            position: absolute;
-            left: 0;
-            top: 0;
-
+        .sliderWrap .slider img {
+            vertical-align: top;
         }
 
-        /* .sliderwrap .slider:nth-child(1){
-            display: block;
-        } */
-
-        .sliderwrap .slider span {
-            /* 이미지 가운데 하는 스타일 */
+        .sliderWrap .slider span {
             position: absolute;
-            left: 50%;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            /* 여기까지 */
             background-color: rgba(0, 0, 0, 0.4);
             padding: 10px 20px;
-            color: #fff;
-        }
-
-        /* nav */
-
-        .nav {
-            position: relative;
-            z-index: 2000;
-        }
-
-        .nav>ul {
-            display: flex;
-            justify-content: right;
-            margin-top: 60px;
-        }
-
-        .nav>ul>li {
-            list-style: none;
-        }
-
-        .nav>ul>li>a {
-            text-decoration: none;
-            color: #000;
-            padding: 10px 50px;
-            background-color: #aeaeae;
-            display: inline-block;
-        }
-
-        .nav>ul>li>a:hover {
-            background-color: #919c7b;
-        }
-
-        .nav>ul>li>ul {
-            display: none;
-        }
-
-        .nav>ul>li>ul>li {
-            list-style: none;
-            text-align: center;
-        }
-
-        .nav>ul>li>ul>li>a {
-            text-decoration: none;
-            color: #e9e9e9;
-            width: 100%;
-            padding: 10px;
-            display: inline-block;
-            box-sizing: border-box;
-        }
-
-        .nav>ul>li>ul>li>a:hover {
-            background-color: #b1b1b1;
+            color: white;
         }
     </style>
 </head>
@@ -211,59 +159,23 @@
         <header id="haeader">
             <div class="header_container">
                 <h1 class="logo"></h1>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#">1차 메뉴</a>
-                            <ul>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">1차 메뉴</a>
-                            <ul>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">1차 메뉴</a>
-                            <ul>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">1차 메뉴</a>
-                            <ul>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                                <li><a href="#">2차 메뉴</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <!-- //haeader -->
 
         <article id="slider">
-            <div class="sliderwrap">
+            <div class="sliderWrap">
                 <div class="slider s1">
-                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg">
-                    <span>이미지1</span>
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg" alt="jpg">
+                    <span>이미지01</span>
                 </div>
                 <div class="slider s2">
-                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg">
-                    <span>이미지2</span>
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="jpg">
+                    <span>이미지02</span>
                 </div>
                 <div class="slider s3">
-                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg">
-                    <span>이미지3</span>
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="jpg">
+                    <span>이미지03</span>
                 </div>
             </div>
         </article>
@@ -290,55 +202,44 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+        // $(function () {
+        //     let currentIndex = 0;   //현재 이미지
+
+        //     setInterval(() => {
+        //         let nextIndex = (currentIndex + 1) % 3      //1 2 0 1 2 0 1 2 0 ....무한반복
+
+        //         // console.log(currentIndex ++)        //1씩 증가
+        //         // console.log(currentIndex += 2)      //2씩 증가
+        //         // console.log(currentIndex++ % 3)     //0 1 2 무한
+
+        //         $(".slider").eq(currentIndex).fadeOut(1000);     //첫번째 이미지 사라짐
+        //         $(".slider").eq(nextIndex).fadeIn(1000);         //두번째 이미지 나타남
+
+        //         currentIndex = nextIndex                      //오른쪽 값을 왼쪽에 대입시킨다
+        //     }, 3000);
+        // });
+
+
+        // $(function () {
+        //     let currentIndex = 0;   //현재 이미지
+        //     $(".sliderWrap").append($(".slider").first().clone(true));  //첫번째 이미지를 복사, 마지막에 추가
+
+        //     setInterval(function () {     //3초에 한번씩 실행
+        //         currentIndex++;     //현재 이미지를 1씩 증가
+        //         $(".sliderWrap").animate({ marginLeft: -currentIndex * 100 + "%" }, 600); //이미지 애니메이션
+
+        //         if (currentIndex == 3) {  //마지막 이미지일때
+        //             setTimeout(function () {
+        //                 $(".sliderWrap").animate({ marginLeft: 0 }, 0);   //애니메이션을 정지
+        //                 currentIndex = 0;   //현재이미지 초기화
+        //             }, 700);
+        //         }
+        //     }, 3000);
+        // });
         $(function () {
-            let currentIndex = 0;   //현재 이미지
-
-            setInterval(() => {
-                let nextIndex = (currentIndex + 1) % 3      //1 2 0 1 2 0 1 2 0 ....무한반복
-
-                // console.log(currentIndex ++)        //1씩 증가
-                // console.log(currentIndex += 2)      //2씩 증가
-                // console.log(currentIndex++ % 3)     //0 1 2 무한
-
-                $(".slider").eq(currentIndex).fadeOut(1000);     //첫번째 이미지 사라짐
-                $(".slider").eq(nextIndex).fadeIn(1000);         //두번째 이미지 나타남
-
-                currentIndex = nextIndex                      //오른쪽 값을 왼쪽에 대입시킨다
-            }, 3000);
+            currentIndex = 0; $(".sliderWrap").append()
         });
-
-
-        $(function () {
-            $(".nav>ul>li").mouseover(function () {
-                $(".nav>ul>li>ul").stop().fadeIn(900);
-                $("#haeader").addClass("on")
-            });
-            $(".nav>ul>li").mouseout(function () {
-                $(".nav>ul>li>ul").stop().fadeOut(100);
-                $("#haeader").removeClass("on");
-            });
-        })
-
-
     </script>
-
-    <!-- <script>
-        window.onload = function () {
-            let currentIndex = 0;                                   //현재 이미지
-            const slider = document.querySelectorAll(".slider");   //모든 이미지 변수
-            slider.forEach(img => img.style.opacity = "0");       //모든 이미지를 투명하게
-            slider[0].style.opacity = "1"                           //첫번째 이미지만 보이게
-
-            setInterval(() => { //3초에 한번씩 실행
-                let nextIndex = (currentIndex + 1) % slider.length;  //1 2 0 1 2 0 1 2 0 ....무한반복
-
-                slider[currentIndex].style.opacity = "0"            //첫번째 이미지 사라짐
-                slider[nextIndex].style.opacity = "1"               //두번째 이미지 나타남
-                slider.forEach(img => img.style.transition = "all 1s")   //이미지에 애니메이션
-                currentIndex = nextIndex;
-            }, 1000);
-        }
-    </script> -->
 </body>
 
 </html>
