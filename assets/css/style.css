@@ -148,6 +148,11 @@ body {
     }
 }
 
+
+.main__icons span:hover {
+    color: #8f8f8f;
+}
+
 /* layer__wrap */
 .layer__wrap {}
 
