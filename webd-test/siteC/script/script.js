@@ -14,19 +14,20 @@ $(function () {
             }, 700);
         }
     }, 3000);
-});
 
-$(".nav > ul > li").mouseover(function () {
-    $(this).find(".submenu").stop().slideDown();
-});
-$(".nav > ul > li").mouseout(function () {
-    $(this).find(".submenu").stop().slideUp();
-});
+    // 메뉴
+    $(".nav > ul > li").mouseover(function () {
+        $(this).find(".submenu").stop().slideDown();
+    });
+    $(".nav > ul > li").mouseout(function () {
+        $(this).find(".submenu").stop().slideUp();
+    });
 
-// 팝업
-$(".popup-btn").click(function () {   //팝업 버튼 클릭
-    $(".popup-view").show();    //팝업 나타나기
-});
-$(".popup-close").click(function () {     //팝업 닫기 버튼 클릭
-    $(".popup-view").hide();   //팝업 숨기기
+    // 팝업
+    $(".popup-btn").click(function () {
+        $(".popup-view").show();
+    });
+    $(".popup-close").click(function () {
+        $(".popup-view").hide();
+    });
 });

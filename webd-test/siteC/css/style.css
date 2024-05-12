@@ -41,8 +41,8 @@ img {
 }
 
 #aside .logo a {
-    padding: 20px;
     display: inline-block;
+    padding: 20px;
     font-size: 26px;
 }
 
@@ -50,10 +50,8 @@ img {
     width: 200px;
     height: 550px;
     position: relative;
-    z-index: 100;
+    z-index: 1000;
 }
-
-#aside .nav>ul {}
 
 #aside .nav>ul>li {
     position: relative;
@@ -70,7 +68,7 @@ img {
 }
 
 #aside .nav>ul>li>a:hover {
-    background-color: #7833fa;
+    background-color: #7243c9;
 }
 
 #aside .nav>ul>li>ul {
@@ -83,8 +81,6 @@ img {
     display: none;
 }
 
-#aside .nav>ul>li>ul>li {}
-
 #aside .nav>ul>li>ul>li>a {
     padding: 10px;
     display: inline-block;
@@ -93,7 +89,7 @@ img {
 }
 
 #aside .nav>ul>li>ul>li>a:hover {
-    background-color: #a99bc4;
+    background-color: #8558d1;
     color: #fff;
 }
 
