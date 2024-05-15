@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-1</title>
+    <title>웹디자인기능사 레이아웃 A-4</title>
     <style>
         * {
             margin: 0;
@@ -13,57 +14,55 @@
 
         #wrap {
             width: 1200px;
-            height: 700px;
-            /* 블록구조 가운데 정렬 */
             margin: 0 auto;
         }
 
         #header {
-            width: 1200px;
-            height: 100px;
+            width: 100%;
             display: flex;
         }
 
-
         #header .logo {
             width: 20%;
-            height: 100%;
-            background-color: #ffe7e7;
+            height: 100px;
+            background-color: #faffe5;
         }
 
         #header .nav {
             width: 80%;
-            height: 100%;
-            background-color: #ffd4d4;
+            height: 100px;
+            background-color: #f0fac8;
         }
 
         #slider {
-            width: 1200px;
+            width: 100%;
             height: 300px;
-            background-color: #f6aeae;
+            background-color: #e6fa9a;
         }
 
         #contents {
-            width: 1200px;
+            width: 100%;
             display: flex;
         }
 
         #contents .content1 {
             width: 33.3333%;
             height: 200px;
-            background-color: #dda4a4;
+            background-color: #d8f17f;
         }
 
         #contents .content2 {
             width: 33.3333%;
             height: 200px;
-            background-color: #c2a7a7;
+            background-color: #c7df72;
+
         }
 
         #contents .content3 {
             width: 33.3333%;
             height: 200px;
-            background-color: #cf8989;
+            background-color: #b9d166;
+
         }
 
         #footer {
@@ -78,51 +77,52 @@
         #footer .footer1 .footer1-1 {
             width: 100%;
             height: 50px;
-            background-color: #b1b1b1;
+            background-color: #dbff58;
         }
 
         #footer .footer1 .footer1-2 {
             width: 100%;
             height: 50px;
-            background-color: #a3a3a3;
+            background-color: #c3e548;
         }
 
         #footer .footer2 {
             width: 20%;
             height: 100px;
-            background-color: #d9d9d9;
+            background-color: #a3c136;
         }
     </style>
 </head>
 
 <body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </header>
+        <!-- //header -->
 
-</body>
-<div id="wrap">
-    <div id="header">
-        <div class="logo"></div>
-        <div class="nav"></div>
-    </div>
-    <!-- //header -->
+        <article id="slider">
+        </article>
+        <!-- //slider -->
 
-    <div id="slider"></div>
-    <!-- //slider  -->
+        <main id="contents">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3"></section>
+        </main>
+        <!-- //contents -->
 
-    <div id="contents">
-        <div class="content1"></div>
-        <div class="content2"></div>
-        <div class="content3"></div>
-    </div>
-    <!-- //contents -->
-
-    <div id="footer">
-        <div class="footer1">
-            <div class="footer1-1"></div>
-            <div class="footer1-2"></div>
-        </div>
-        <div class="footer2"></div>
+        <footer id="footer">
+            <div class="footer1">
+                <div class="footer1-1"></div>
+                <div class="footer1-2"></div>
+            </div>
+            <div class="footer2"></div>
+        </footer>
         <!-- //footer -->
-
     </div>
+    <!-- //wrap -->
+</body>
 
 </html>

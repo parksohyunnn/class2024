@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B-4</title>
+    <title>웹디자인기능사 레이아웃 B-3</title>
     <style>
         * {
             margin: 0;
@@ -18,26 +19,19 @@
         #header {
             width: 100%;
             height: 100px;
-            background-color: #DAE8F9;
+            background-color: #e0feff;
         }
 
-        #header .header-container {
-            width: 1200px;
-            height: 100px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        #header .header-container .logo {
+        #header .logo {
             width: 20%;
             height: 100px;
-            background-color: #ACE9FF;
+            background-color: #c4edee;
         }
 
-        #header .header-container .nav {
+        #header .nav {
             width: 80%;
             height: 100px;
-            background-color: #9BDAE5;
+            background-color: #bfd8d9;
         }
 
         #slider {
@@ -45,76 +39,61 @@
             height: 300px;
         }
 
-        #slider .slider-container {
-            width: 1200px;
-            height: 300px;
-            background-color: #BDCAD6;
-            margin: 0 auto;
-        }
-
         #contents {
             width: 100%;
-            height: 200px;
         }
 
-        #contents .contents-container {
-            width: 1200px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        #contents .contents-container .content1 {
+        #contents .content1 {
             width: 33.3333%;
             height: 200px;
-            background-color: #97BEE0;
+            background-color: #b1ebed;
         }
 
-        #contents .contents-container .content2 {
+        #contents .content2 {
             width: 33.3333%;
             height: 200px;
-            background-color: #76A7D2;
+            background-color: #a8d3d4;
         }
 
-        #contents .contents-container .content3 {
+        #contents .content3 {
             width: 33.3333%;
             height: 200px;
-            background-color: #5393CC;
+            background-color: #8eb0b1;
         }
 
         #footer {
             width: 100%;
-            height: 100px;
-            background-color: #FFF8EF;
+            background-color: #e0feff;
         }
 
-        #footer .footer-container {
-            width: 1200px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        #footer .footer-container .footer1 {
+        #footer .footer1 {
             width: 80%;
-            height: 100px;
-            background-color: #ABB8C7;
         }
 
-        #footer .footer-container .footer1 .footer1-1 {
+        #footer .footer1 .footer1-1 {
             width: 100%;
             height: 50px;
-            background-color: #D0EAFE;
+            background-color: #6db0b3;
         }
 
-        #footer .footer-container .footer1 .footer1-2 {
+        #footer .footer1 .footer1-2 {
             width: 100%;
             height: 50px;
-            background-color: #42A3CC;
+            background-color: #579193;
         }
 
-        #footer .footer-container .footer2 {
+        #footer .footer2 {
             width: 20%;
             height: 100px;
-            background-color: #BECBFF;
+            background-color: #3f9598;
+        }
+
+        .container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(62, 110, 125, 0.2);
+            display: flex;
         }
     </style>
 </head>
@@ -122,36 +101,39 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="header-container">
+            <div class="container">
                 <h1 class="logo"></h1>
                 <nav class="nav"></nav>
             </div>
         </header>
-        <!-- <//header> -->
+        <!-- //header -->
+
         <article id="slider">
-            <div class="slider-container"></div>
+            <div class="container"></div>
         </article>
-        <!-- <//slider> -->
+        <!-- //slider -->
+
         <main id="contents">
-            <div class="contents-container">
+            <div class="container">
                 <section class="content1"></section>
                 <section class="content2"></section>
                 <section class="content3"></section>
             </div>
         </main>
-        <!-- <//contents> -->
+        <!-- //contents -->
+
         <footer id="footer">
-            <div class="footer-container">
-                <section class="footer1">
+            <div class="container">
+                <div class="footer1">
                     <div class="footer1-1"></div>
                     <div class="footer1-2"></div>
-                </section>
-                <section class="footer2">
-                </section>
+                </div>
+                <div class="footer2"></div>
             </div>
         </footer>
-        <!-- <//footer> -->
+        <!-- //footer -->
     </div>
+    <!-- //wrap -->
 </body>
 
 </html>

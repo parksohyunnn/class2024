@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-4</title>
+    <title>웹디자인기능사 레이아웃 E-4</title>
     <style>
         * {
             margin: 0;
@@ -18,95 +19,93 @@
         #main {
             width: 100%;
             height: calc(100vh - 120px);
-            background-color: rgb(151, 110, 49);
             display: flex;
         }
 
         #header {
             width: 200px;
             height: 100%;
-            background-color: rgb(175, 127, 56);
         }
 
         #header .logo {
+            width: 100%;
             height: 10%;
-            background-color: aqua;
+            background-color: #efefef;
         }
 
-        #header .menu {
+        #header .nav {
+            width: 100%;
             height: 90%;
-            background-color: aquamarine;
+            background-color: #e3e3e3;
         }
-
-
 
         #contents {
             width: 400px;
             height: 100%;
-            background-color: rgb(84, 219, 102);
         }
 
         #contents .banner {
+            width: 100%;
             height: 15%;
-            background-color: rgb(172, 201, 105);
+            background-color: #d9d9d9;
         }
 
         #contents .notice {
+            width: 100%;
             height: 35%;
-            background-color: rgb(99, 179, 34);
+            background-color: #d1d1d1;
         }
 
         #contents .gallery {
+            width: 100%;
             height: 35%;
-            background-color: rgb(73, 128, 37);
+            background-color: #c7c7c7;
         }
 
         #contents .link {
+            width: 100%;
             height: 15%;
-            background-color: rgb(44, 143, 49);
+            background-color: #bcbcbc;
         }
 
         #slider {
             width: calc(100% - 600px);
             height: 100%;
-            background-color: rgb(138, 123, 101);
-
+            background-color: #b1b1b1;
         }
 
         #footer {
             width: 100%;
-            height: 120px;
             display: flex;
+            flex-wrap: wrap;
         }
 
         #footer .footer1 {
-            width: 20%;
+            width: 200px;
             height: 120px;
-            background-color: rgb(236, 226, 88);
+            background-color: #a3a3a3;
         }
 
         #footer .footer2 {
-            width: 50%;
-            height: 120px;
+            width: calc(100% - 400px);
         }
 
-        #footer .footer2-1 {
+        #footer .footer2 .footer2-1 {
             width: 100%;
             height: 60px;
-            background-color: rgb(170, 51, 160);
-
+            background-color: #9d9d9d;
         }
 
-        #footer .footer2-2 {
+        #footer .footer2 .footer2-2 {
             width: 100%;
             height: 60px;
-            background-color: rgb(190, 98, 183);
+            background-color: #929292;
         }
 
         #footer .footer3 {
-            width: 30%;
+            width: 200px;
             height: 120px;
-            background-color: rgb(190, 98, 183);
+            background-color: #838383;
         }
     </style>
 </head>
@@ -116,10 +115,9 @@
         <main id="main">
             <header id="header">
                 <h1 class="logo"></h1>
-                <nav class="menu"></nav>
+                <nav class="nav"></nav>
             </header>
             <!-- //header -->
-
 
             <section id="contents">
                 <article class="banner"></article>
@@ -129,11 +127,13 @@
             </section>
             <!-- //contents -->
 
-            <article id="slider"></article>
+            <article id="slider">
+            </article>
             <!-- //article -->
 
         </main>
         <!-- //main -->
+
         <footer id="footer">
             <div class="footer1"></div>
             <div class="footer2">
@@ -144,6 +144,7 @@
         </footer>
         <!-- //footer -->
     </div>
+    <!-- //wrap -->
 </body>
 
 </html>

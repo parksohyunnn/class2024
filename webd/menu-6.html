@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>웹디자인기능사 메뉴 M-6</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: 'GmarketSans';
         }
 
         li {
@@ -119,22 +122,21 @@
         }
 
         .nav>ul>li>a {
-            display: block;
-            background-color: #c7c7c7;
             padding: 10px;
+            display: block;
             text-align: center;
+            background-color: #ccc;
         }
 
         .nav>ul>li>a:hover {
-            background-color: tan;
+            background-color: #aeaeae;
         }
 
         .nav>ul>li>ul {
             position: absolute;
+            right: -500px;
             top: 0;
-            left: 200px;
             width: 500px;
-            height: 80px;
             display: none;
         }
 
@@ -143,15 +145,13 @@
         }
 
         .nav>ul>li>ul>li>a {
-            display: inline-block;
             padding: 10px;
+            display: inline-block;
             width: 100px;
-
         }
 
         .nav>ul>li>ul>li>a:hover {
-            background-color: yellowgreen;
-
+            background-color: #a2a2a2;
         }
 
         #main {
@@ -160,9 +160,9 @@
 
         #main::after {
             content: '';
-            width: 0;
-            height: 200px;
-            background-color: #929292;
+            width: 0%;
+            height: 193px;
+            background-color: #b0b0b0;
             position: absolute;
             left: 0;
             top: 100px;
@@ -180,52 +180,47 @@
     <div id="wrap">
         <aside id="aside">
             <h1></h1>
-            <nav>
-                <nav class="nav">
-                    <ul>
-                        <li>
-                            <a href="#">메뉴1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴1-1</a></li>
-                                <li><a href="#">서브메뉴1-2</a></li>
-                                <li><a href="#">서브메뉴1-3</a></li>
-                                <li><a href="#">서브메뉴1-4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴2</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴2-1</a></li>
-                                <li><a href="#">서브메뉴2-2</a></li>
-                                <li><a href="#">서브메뉴2-3</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴3</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴3-1</a></li>
-                                <li><a href="#">서브메뉴3-2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴4</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴4-1</a></li>
-                                <li><a href="#">서브메뉴4-2</a></li>
-                                <li><a href="#">서브메뉴4-3</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴5</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴4-1</a></li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴1-1</a></li>
+                            <li><a href="#">서브메뉴1-2</a></li>
+                            <li><a href="#">서브메뉴1-3</a></li>
+                            <li><a href="#">서브메뉴1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴2-1</a></li>
+                            <li><a href="#">서브메뉴2-2</a></li>
+                            <li><a href="#">서브메뉴2-3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴3-1</a></li>
+                            <li><a href="#">서브메뉴3-2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴4-1</a></li>
+                            <li><a href="#">서브메뉴4-2</a></li>
+                            <li><a href="#">서브메뉴4-3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴5</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴5-1</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
         </aside>
         <!-- //aside -->
@@ -251,18 +246,38 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    $(".nav>ul>li").mouseover(function () {
-        $(".nav>ul>li>ul").stop().fadeIn();
-        $("#main").addClass(".on")
-    });
-    $(".nav>ul>li").mouseout(function () {
-        $(".nav>ul>li>ul").stop().fadeOut();
-        $("#main").removeClass(".on")
-    });
 
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $(".nav > ul > li").mouseover(function(){
+                $(".nav > ul > li > ul").stop().fadeIn(300);
+                $("#main").addClass("on");
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(".nav > ul > li > ul").stop().fadeOut(100);
+                $("#main").removeClass("on");
+            });
+        });
+    </script> -->
+    <script>
+        window.onload = function () {
+            let navList = document.querySelector(".nav > ul");
+
+            navList.addEventListener("mouseover", function () {
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.display = "block";
+                });
+                document.getElementById("main").classList.add("on");
+            });
+            navList.addEventListener("mouseout", function () {
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.display = "none";
+                });
+                document.getElementById("main").classList.remove("on");
+            });
+        }
+    </script>
+</body>
 
 </html>

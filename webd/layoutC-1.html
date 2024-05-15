@@ -3,100 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C-1</title>
+    <title>웹디자인기능사 레이아웃 C-1</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-
         }
 
         #wrap {
             width: 1000px;
-            height: 650px;
             display: flex;
         }
 
         #aside {
             width: 20%;
-            height: 650px;
-            background-color: #cfb3b3;
         }
 
         #aside .logo {
+            width: 100%;
             height: 100px;
-            background-color: rgb(199, 176, 147);
+            background-color: #c4e6ff;
         }
 
         #aside .nav {
+            width: 100%;
             height: 550px;
-            background-color: rgb(147, 214, 214);
+            background-color: #a9d6f5;
         }
 
         #main {
             width: 80%;
             height: 650px;
-            background-color: #a87979;
+            background-color: #90bedd;
         }
 
         #slider {
             width: 100%;
             height: 350px;
-            background-color: rgb(117, 100, 78);
+            background-color: #75abcf;
         }
 
         #contents {
             width: 100%;
             display: flex;
-
         }
 
-        #contents .contents1 {
+        #contents .content1 {
             width: 33.3333%;
             height: 200px;
-            background-color: #a87979;
+            background-color: #5b8fb2;
         }
 
-        #contents .contents2 {
+        #contents .content2 {
             width: 33.3333%;
             height: 200px;
-            background-color: #964242;
+            background-color: #487c9f;
         }
 
-        #contents .contents3 {
+        #contents .content3 {
             width: 33.3333%;
             height: 200px;
-            background-color: #a87979;
+            background-color: #376c90;
         }
 
         #footer {
             width: 100%;
-            height: 100px;
             display: flex;
         }
 
         #footer .footer1 {
-            width: 70%;
-            height: 100%;
-            background-color: aqua;
+            width: 20%;
+            height: 100px;
+            background-color: #235779;
         }
 
         #footer .footer2 {
-            width: 30%;
-            height: 100%;
+            width: 80%;
         }
 
         #footer .footer2 .footer2-1 {
             width: 100%;
-            height: 50%;
-            background-color: #cfb3b3;
+            height: 50px;
+            background-color: #12476a;
         }
 
         #footer .footer2 .footer2-2 {
             width: 100%;
-            height: 50%;
-            background-color: #804141;
+            height: 50px;
+            background-color: #103e5d;
         }
     </style>
 </head>
@@ -107,13 +103,20 @@
             <h1 class="logo"></h1>
             <nav class="nav"></nav>
         </aside>
+        <!-- //aside -->
+
         <main id="main">
-            <article id="slider"></article>
+            <article id="slider">
+            </article>
+            <!-- //article -->
+
             <section id="contents">
-                <div class="contents1"></div>
-                <div class="contents2"></div>
-                <div class="contents3"></div>
+                <article class="content1"></article>
+                <article class="content2"></article>
+                <article class="content3"></article>
             </section>
+            <!-- //contents -->
+
             <footer id="footer">
                 <div class="footer1"></div>
                 <div class="footer2">
@@ -121,10 +124,11 @@
                     <div class="footer2-2"></div>
                 </div>
             </footer>
+            <!-- //footer -->
         </main>
+        <!-- //main -->
     </div>
+    <!-- //wrap -->
 </body>
 
 </html>
-
-<!-- article#slider+selectin#contents+footer -->

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>웹디자인기능사 메뉴 M-5</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: 'GmarketSans';
         }
 
         li {
@@ -114,45 +117,42 @@
         }
 
         .nav>ul>li>a {
-            display: inline-block;
             padding: 10px;
-            width: 100%;
-            background-color: #929292;
+            display: block;
             text-align: center;
-            box-sizing: border-box;
+            background-color: #ccc;
         }
 
         .nav>ul>li>a:hover {
-            background-color: yellowgreen;
+            background-color: #dbdbdb;
         }
 
         .nav>ul>li>ul {
             position: absolute;
+            right: -200px;
             top: 0;
-            left: 200px;
             width: 200px;
-            background-color: #b1b1b1;
+            background-color: #6d6d6d;
             display: none;
         }
 
         .nav>ul>li>ul>li>a {
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
             padding: 10px;
+            display: block;
         }
 
         .nav>ul>li>ul>li>a:hover {
-            background-color: thistle;
+            background-color: #c0c0c0;
         }
     </style>
 </head>
 
 <body>
-    <div id="wrap">
-        <aside id="aside">
-            <h1></h1>
-            <nav>
+
+    <body>
+        <div id="wrap">
+            <aside id="aside">
+                <h1></h1>
                 <nav class="nav">
                     <ul>
                         <li>
@@ -193,40 +193,66 @@
                         </li>
                     </ul>
                 </nav>
-            </nav>
-        </aside>
-        <!-- //aside -->
+            </aside>
+            <!-- //aside -->
 
-        <main id="main">
-            <article id="slider"></article>
-            <article id="link"></article>
-            <section id="contents">
-                <div class="content1"></div>
-                <div class="content2"></div>
-            </section>
-        </main>
-        <!-- //main -->
+            <main id="main">
+                <article id="slider"></article>
+                <article id="link"></article>
+                <section id="contents">
+                    <div class="content1"></div>
+                    <div class="content2"></div>
+                </section>
+            </main>
+            <!-- //main -->
 
-        <footer id="footer">
-            <div class="footer1"></div>
-            <div class="footer2">
-                <div class="footer2-1"></div>
-                <div class="footer2-2"></div>
-            </div>
-            <div class="footer3"></div>
-        </footer>
-        <!-- //footer -->
-    </div>
-    <!-- //wrap -->
+            <footer id="footer">
+                <div class="footer1"></div>
+                <div class="footer2">
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
+                </div>
+                <div class="footer3"></div>
+            </footer>
+            <!-- //footer -->
+        </div>
+        <!-- //wrap -->
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $(".nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop().slideDown();
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop().slideUp();
+            });
+        });
+    </script> -->
+    <script>
+        window.onload = function () {
+            let navList = document.querySelectorAll(".nav > ul > li");
+
+            navList.forEach(function (nav) {
+                nav.querySelector("ul").style.display = "block";
+                nav.querySelector("ul").style.height = "0";
+                nav.querySelector("ul").style.overflow = "hidden";
+                nav.querySelector("ul").style.transition = "height 400ms";
+            });
+
+            navList.forEach(function (navItem) {
+                navItem.addEventListener("mouseover", function () {
+                    this.querySelector(".submenu").style.height = "155px";
+                });
+            });
+            navList.forEach(function (navItem) {
+                navItem.addEventListener("mouseout", function () {
+                    this.querySelector(".submenu").style.height = "0px";
+                });
+            });
+        }
+    </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    $(".nav>ul>li").mouseover(function () {
-        $(this).find(".submenu").stop().slideDown();
-    });
-    $(".nav>ul>li").mouseout(function () {
-        $(this).find(".submenu").stop().slideUp();
-    });
-</script>
 
 </html>
